@@ -1,6 +1,6 @@
 name       : kf6-kguiaddons
 version    : 5.249.0
-release    : 3
+release    : 4
 source     :
     - https://download.kde.org/unstable/frameworks/5.249.0/kguiaddons-5.249.0.tar.xz : 6f21b46268f148a74636b9363e269d17e3bb7de01211905810f07688caa69563
 homepage   : https://community.kde.org/Frameworks
@@ -22,10 +22,9 @@ rundeps    :
         - extra-cmake-modules
         - qt6-tools-devel
 clang      : yes
-optimize   : lto
+optimize   : thin-lto
 setup      : |
-    # Plasma-6: Set BUILD_GEO_SCHEME_HANDLER=ON
-    %cmake_kf6 -DBUILD_GEO_SCHEME_HANDLER=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
