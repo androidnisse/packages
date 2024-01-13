@@ -1,0 +1,29 @@
+name       : plasma-activities
+version    : 5.93.0
+release    : 1
+source     :
+    - https://download.kde.org/unstable/plasma/5.93.0/plasma-activities-5.93.0.tar.xz : dd42da97422d9931b66a7af05fabaee1d0846438c6bd62f7330bdbc0393eaa18
+homepage   : https://community.kde.org/Frameworks
+license    :
+    - GPL-2.0-or-later
+    - LGPL-2.0-or-later
+    - LGPL-2.1-only
+    - MIT
+component  : programming.library
+summary    : Core components for the KDE Activity concept
+description: |
+    Plasma Activities provides the infrastructure needed to manage a user's activites, allowing them to switch between tasks, and for applications to update their state to match the user's current activity. This includes a daemon, a library for interacting with that daemon, and plugins for integration with other frameworks.
+builddeps  :
+    - pkgconfig(Qt6Quick)
+    - kf6-kconfig-devel
+    - kf6-kcoreaddons-devel
+    - kf6-kwindowsystem-devel
+    - libboost-devel
+clang      : yes
+optimize   : thin-lto
+setup      : |
+    %cmake_kf6
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
