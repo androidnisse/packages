@@ -1,8 +1,8 @@
 name       : libksysguard
-version    : 5.27.10
-release    : 91
+version    : 5.93.0
+release    : 92
 source     :
-    - https://cdn.download.kde.org/stable/plasma/5.27.10/libksysguard-5.27.10.tar.xz : 17fc33b028cb272391b68c46e93b2d806d8254e6af9399d61375d49041ff3ce5
+    - https://download.kde.org/unstable/plasma/5.93.0/libksysguard-5.93.0.tar.xz : f3120fb53128877ff32fe6a11d7d8077c023faac024371b09f5faa1d08bf1369
 homepage   : https://www.kde.org/workspaces/plasmadesktop/
 license    :
     - GPL-2.0-or-later
@@ -14,20 +14,19 @@ description: |
 optimize   : lto
 builddeps  :
     - pkgconfig(libnl-3.0)
-    - pkgconfig(Qt5Script)
-    - pkgconfig(Qt5WebEngineWidgets)
-    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(Qt6WebEngineWidgets)
     - pkgconfig(xres)
-    - kglobalaccel-devel
-    - kiconthemes-devel
-    - kio-devel
-    - knewstuff-devel
+    - kf6-kauth-devel
+    - kf6-kglobalaccel-devel
+    - kf6-kiconthemes-devel
+    - kf6-kio-devel
+    - kf6-knewstuff-devel
     - lm_sensors-devel
-    - plasma-framework-devel
+    - libplasma-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
     %ninja_install
-    %qml_cache
+    %qml6_cache
