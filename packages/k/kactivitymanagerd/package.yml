@@ -1,8 +1,8 @@
 name       : kactivitymanagerd
-version    : 5.27.10
-release    : 90
+version    : 5.93.0
+release    : 91
 source     :
-    - https://cdn.download.kde.org/stable/plasma/5.27.10/kactivitymanagerd-5.27.10.tar.xz : 8ee262fb6c4987fb3e66b5adec4d60d10c98adb40ed7da3372b8b342d70e5dd9
+    - https://download.kde.org/unstable/plasma/5.93.0/kactivitymanagerd-5.93.0.tar.xz : b407e083f6a408d56f4b8293d8d12b71f1908b4986f052a240a5303d41cb5875
 homepage   : https://www.kde.org/workspaces/plasmadesktop/
 license    :
     - GPL-2.0-or-later
@@ -14,13 +14,14 @@ description: |
 libsplit   : no
 optimize   : lto
 builddeps  :
-    - kcrash-devel
-    - kdbusaddons-devel
-    - kio-devel
-    - kglobalaccel-devel
+    - kf6-kcrash-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kglobalaccel-devel
+    - kf6-kio-devel
+    - kf6-kxmlgui-devel
     - libboost-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
