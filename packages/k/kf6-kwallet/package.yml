@@ -1,6 +1,6 @@
 name       : kf6-kwallet
 version    : 5.249.0
-release    : 3
+release    : 4
 source     :
     - https://download.kde.org/unstable/frameworks/5.249.0/kwallet-5.249.0.tar.xz : 4ef45eb567dd43945dfa562da688817c6f917fcd63c3f779c77900ae0e22a646
 homepage   : https://community.kde.org/Frameworks
@@ -30,11 +30,9 @@ builddeps  :
     - kf6-kwindowsystem-devel
     - qca-qt6-devel
 clang      : yes
-optimize   : lto
+optimize   : thin-lto
 setup      : |
-    # Plasma-6: Change BUILD_KWALLETD and BUILD_KWALLET_QUERY
-    %cmake_kf6 -DBUILD_KWALLETD=OFF \
-               -DBUILD_KWALLET_QUERY=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
