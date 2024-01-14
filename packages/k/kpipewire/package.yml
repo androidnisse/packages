@@ -1,8 +1,8 @@
 name       : kpipewire
-version    : 5.27.10
-release    : 11
+version    : 5.93.2
+release    : 12
 source     :
-    - https://cdn.download.kde.org/stable/plasma/5.27.10/kpipewire-5.27.10.tar.xz : c23ca5169ae2ef069b1d79107c5ae4ff859d8848fe6c98decfd0f357f378c3ee
+    - https://download.kde.org/unstable/plasma/5.93.0/kpipewire-5.93.2.tar.xz : 36a9261c486796a66fc4f2747982ea3b96cf1ff169e1416359bdfa131527a71f
 homepage   : https://www.kde.org/workspaces/plasmadesktop/
 license    : LGPL-2.1-or-later
 component  : desktop.kde.core
@@ -14,20 +14,21 @@ patterns   :
     - /usr/lib64/libKPipeWireRecord*.so
 optimize   : lto
 builddeps  :
-    - pkgconfig(KF5WaylandClient)
-    - pkgconfig(Qt5Quick)
-    - pkgconfig(Qt5WaylandClient)
+    - pkgconfig(KWaylandClient)
+    - pkgconfig(Qt6Quick)
+    - pkgconfig(Qt6WaylandClient)
     - pkgconfig(epoxy)
     - pkgconfig(gbm)
     - pkgconfig(libavformat)
     - pkgconfig(libdrm)
     - pkgconfig(libpipewire-0.3)
+    - pkgconfig(libva)
     - extra-cmake-modules
-    - kcoreaddons-devel
-    - ki18n-devel
+    - kf6-kcoreaddons-devel
+    - kf6-ki18n-devel
     - plasma-wayland-protocols-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
