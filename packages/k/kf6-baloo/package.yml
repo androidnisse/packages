@@ -1,6 +1,6 @@
 name       : kf6-baloo
 version    : 5.249.0
-release    : 3
+release    : 4
 source     :
     - https://download.kde.org/unstable/frameworks/5.249.0/baloo-5.249.0.tar.xz : 508dbf05e579f9a33c553e0f2d617fe2a61f0dd51413fd8960e46ea9a92aa537
 homepage   : https://community.kde.org/Frameworks
@@ -30,9 +30,9 @@ rundeps    :
         - kf6-kfilemetadata-devel
         - qt6-base-devel
 clang      : yes
-optimize   : lto
+optimize   : thin-lto
 setup      : |
-    %cmake_kf6 -DBUILD_INDEXER_SERVICE=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
