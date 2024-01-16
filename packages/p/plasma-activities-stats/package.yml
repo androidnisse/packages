@@ -1,0 +1,30 @@
+name       : plasma-activities-stats
+version    : 5.93.0
+release    : 1
+source     :
+    - https://download.kde.org/unstable/plasma/5.93.0/plasma-activities-stats-5.93.0.tar.xz : c8566ed38fbf5877fc8f60f9e36c6d8c5e2717ee71f0f32bec146c455a2b4596
+homepage   : https://invent.kde.org/plasma/plasma-activities-stats
+license    :
+    - GPL-2.0-only
+    - GPL-2.0-or-later
+    - GPL-3.0-only
+    - LGPL-2.0-or-later
+    - LGPL-2.1-only
+    - LGPL-3.0-only
+component  : desktop.library
+summary    : A library for accessing the usage data collected by the activities system.
+description: |
+    A library for accessing the usage data collected by the activities system.
+builddeps  :
+    - pkgconfig(Qt6Core)
+    - pkgconfig(Qt6DBus)
+    - pkgconfig(Qt6Sql)
+    - extra-cmake-modules
+    - kf6-kconfig-devel
+    - plasma-activities-devel
+setup      : |
+    %cmake_ninja
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
