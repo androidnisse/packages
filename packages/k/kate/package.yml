@@ -1,8 +1,8 @@
 name       : kate
-version    : 23.08.4
-release    : 81
+version    : 24.01.95
+release    : 82
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kate-23.08.4.tar.xz : 297facaab205f67f2c61b17650ef27a10b32ea699083577eeece25d0beb3fba2
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kate-24.01.95.tar.xz : 74d6dcc0b77c9f66645454c0f796d57f856fb8b51825299d9aa6cb8ea20697d6
 homepage   : https://apps.kde.org/kate
 license    :
     - GPL-2.0-or-later
@@ -19,29 +19,28 @@ description:
     - Kate is a multi-document, multi-view text editor by KDE. It features stuff like codefolding, syntaxhighlighting, dynamic word wrap, an embedded console, an extensive plugin interface and some prelimentary scripting support.
 optimize   : lto
 builddeps  :
-    - pkgconfig(Qt5Script)
-    - pkgconfig(Qt5X11Extras)
     - pkgconfig(libgit2)
-    - kactivities-devel
-    - kcrash-devel
-    - kdbusaddons-devel
-    - kdoctools-devel
-    - kguiaddons-devel
-    - kiconthemes-devel
-    - kitemmodels-devel
-    - knewstuff-devel
-    - ktexteditor-devel
-    - kuserfeedback-devel
-    - kwallet-devel
-    - plasma-framework-devel
-    - syntax-highlighting-devel
+    - kf6-kcrash-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kdoctools-devel
+    - kf6-kguiaddons-devel
+    - kf6-kiconthemes-devel
+    - kf6-kitemmodels-devel
+    - kf6-knewstuff-devel
+    - kf6-kuserfeedback-devel
+    - kf6-kwallet-devel
+    - kf6-syntax-highlighting-devel
+    - kf6-ktexteditor-devel
+    - kf6-ktextwidgets-devel
+    - libplasma-devel
+    - plasma-activities-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
     %ninja_install
-    %qml_cache
+    %qml6_cache
 
     # remove docs
     rm -rf $installdir/usr/share/doc
