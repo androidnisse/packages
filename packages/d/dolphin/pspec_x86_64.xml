@@ -24,14 +24,13 @@
             <Path fileType="executable">/usr/bin/dolphin</Path>
             <Path fileType="executable">/usr/bin/servicemenuinstaller</Path>
             <Path fileType="library">/usr/lib/systemd/user/plasma-dolphin.service</Path>
-            <Path fileType="library">/usr/lib64/libdolphinprivate.so.5</Path>
-            <Path fileType="library">/usr/lib64/libdolphinprivate.so.5.0.0</Path>
-            <Path fileType="library">/usr/lib64/libdolphinvcs.so.5</Path>
-            <Path fileType="library">/usr/lib64/libdolphinvcs.so.5.0.0</Path>
-            <Path fileType="library">/usr/lib64/qt5/plugins/dolphin/kcms/kcm_dolphingeneral.so</Path>
-            <Path fileType="library">/usr/lib64/qt5/plugins/dolphin/kcms/kcm_dolphinnavigation.so</Path>
-            <Path fileType="library">/usr/lib64/qt5/plugins/dolphin/kcms/kcm_dolphinviewmodes.so</Path>
-            <Path fileType="library">/usr/lib64/qt5/plugins/kf5/parts/dolphinpart.so</Path>
+            <Path fileType="library">/usr/lib64/libdolphinprivate.so.24.01.95</Path>
+            <Path fileType="library">/usr/lib64/libdolphinprivate.so.6</Path>
+            <Path fileType="library">/usr/lib64/libdolphinvcs.so.24.01.95</Path>
+            <Path fileType="library">/usr/lib64/libdolphinvcs.so.6</Path>
+            <Path fileType="library">/usr/lib64/qt6/plugins/dolphin/kcms/kcm_dolphingeneral.so</Path>
+            <Path fileType="library">/usr/lib64/qt6/plugins/dolphin/kcms/kcm_dolphinviewmodes.so</Path>
+            <Path fileType="library">/usr/lib64/qt6/plugins/kf6/parts/dolphinpart.so</Path>
             <Path fileType="data">/usr/share/applications/org.kde.dolphin.desktop</Path>
             <Path fileType="data">/usr/share/config.kcfg/dolphin_compactmodesettings.kcfg</Path>
             <Path fileType="data">/usr/share/config.kcfg/dolphin_contentdisplaysettings.kcfg</Path>
@@ -49,6 +48,8 @@
             <Path fileType="data">/usr/share/knsrcfiles/servicemenu.knsrc</Path>
             <Path fileType="localedata">/usr/share/locale/ar/LC_MESSAGES/dolphin.mo</Path>
             <Path fileType="localedata">/usr/share/locale/ar/LC_MESSAGES/dolphin_servicemenuinstaller.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ast/LC_MESSAGES/dolphin.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ast/LC_MESSAGES/dolphin_servicemenuinstaller.mo</Path>
             <Path fileType="localedata">/usr/share/locale/az/LC_MESSAGES/dolphin.mo</Path>
             <Path fileType="localedata">/usr/share/locale/az/LC_MESSAGES/dolphin_servicemenuinstaller.mo</Path>
             <Path fileType="localedata">/usr/share/locale/be/LC_MESSAGES/dolphin.mo</Path>
@@ -85,7 +86,6 @@
             <Path fileType="localedata">/usr/share/locale/fa/LC_MESSAGES/dolphin.mo</Path>
             <Path fileType="localedata">/usr/share/locale/fi/LC_MESSAGES/dolphin.mo</Path>
             <Path fileType="localedata">/usr/share/locale/fi/LC_MESSAGES/dolphin_servicemenuinstaller.mo</Path>
-            <Path fileType="localedata">/usr/share/locale/fi/LC_SCRIPTS/dolphin/dolphin.js</Path>
             <Path fileType="localedata">/usr/share/locale/fr/LC_MESSAGES/dolphin.mo</Path>
             <Path fileType="localedata">/usr/share/locale/fr/LC_MESSAGES/dolphin_servicemenuinstaller.mo</Path>
             <Path fileType="localedata">/usr/share/locale/fy/LC_MESSAGES/dolphin.mo</Path>
@@ -94,6 +94,7 @@
             <Path fileType="localedata">/usr/share/locale/gl/LC_MESSAGES/dolphin_servicemenuinstaller.mo</Path>
             <Path fileType="localedata">/usr/share/locale/gu/LC_MESSAGES/dolphin.mo</Path>
             <Path fileType="localedata">/usr/share/locale/he/LC_MESSAGES/dolphin.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/he/LC_MESSAGES/dolphin_servicemenuinstaller.mo</Path>
             <Path fileType="localedata">/usr/share/locale/hi/LC_MESSAGES/dolphin.mo</Path>
             <Path fileType="localedata">/usr/share/locale/hi/LC_MESSAGES/dolphin_servicemenuinstaller.mo</Path>
             <Path fileType="localedata">/usr/share/locale/hne/LC_MESSAGES/dolphin.mo</Path>
@@ -188,7 +189,7 @@
             <Path fileType="localedata">/usr/share/locale/zh_TW/LC_MESSAGES/dolphin.mo</Path>
             <Path fileType="localedata">/usr/share/locale/zh_TW/LC_MESSAGES/dolphin_servicemenuinstaller.mo</Path>
             <Path fileType="data">/usr/share/metainfo/org.kde.dolphin.appdata.xml</Path>
-            <Path fileType="data">/usr/share/qlogging-categories5/dolphin.categories</Path>
+            <Path fileType="data">/usr/share/qlogging-categories6/dolphin.categories</Path>
             <Path fileType="data">/usr/share/zsh/site-functions/_dolphin</Path>
         </Files>
     </Package>
@@ -199,7 +200,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="83">dolphin</Dependency>
+            <Dependency release="84">dolphin</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/Dolphin/KVersionControlPlugin</Path>
@@ -215,9 +216,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="83">
+        <Update release="84">
             <Date>2024-02-15</Date>
-            <Version>23.08.4</Version>
+            <Version>24.01.95</Version>
             <Comment>Packaging update</Comment>
             <Name>Reilly Brogan</Name>
             <Email>solus@reillybrogan.com</Email>
