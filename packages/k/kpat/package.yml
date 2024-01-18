@@ -1,8 +1,8 @@
 name       : kpat
-version    : 23.08.4
-release    : 56
+version    : 24.01.95
+release    : 57
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kpat-23.08.4.tar.xz : 443cb2994ce36ebd9501e69aad356e9180ce11f77f979aaffa3b5446e8cef364
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kpat-24.01.95.tar.xz : 484cd7db8a5ba418a59fd400884a069919e69c479b7216ba800ed6bc25b713ad
 license    :
     - GFDL-1.2-or-later
     - GPL-2.0-or-later
@@ -13,19 +13,20 @@ description: |
     KDE patience game.
 libsplit   : no
 builddeps  :
+    - pkgconfig(Qt6Quick)
+    - pkgconfig(Qt6Svg)
     - pkgconfig(libblack-hole-solver)
     - pkgconfig(libfreecell-solver)
-    - pkgconfig(Qt5Quick)
-    - pkgconfig(Qt5Svg)
-    - kcrash-devel
-    - kdbusaddons-devel
-    - kdoctools-devel
-    - kguiaddons-devel
-    - kio-devel
-    - knewstuff-devel
+    - kf6-kcrash-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kdoctools-devel
+    - kf6-kguiaddons-devel
+    - kf6-kio-devel
+    - kf6-knewstuff-devel
+    - kf6-kxmlgui-devel
     - libkdegames-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
