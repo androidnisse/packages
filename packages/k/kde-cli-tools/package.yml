@@ -1,8 +1,8 @@
 name       : kde-cli-tools
-version    : 5.27.10
-release    : 90
+version    : 5.93.0
+release    : 91
 source     :
-    - https://cdn.download.kde.org/stable/plasma/5.27.10/kde-cli-tools-5.27.10.tar.xz : 7baa6d899cf0e14194f935cd2f2526123c40261f6fbd86dc17cf75bbc6a04d3f
+    - https://download.kde.org/unstable/plasma/5.93.0/kde-cli-tools-5.93.0.tar.xz : 8c72d7463357ff933953782e563409c7c3ff6e622fb4cf14fe0402b95fc57969
 homepage   : https://www.kde.org/workspaces/plasmadesktop/
 license    :
     - GPL-2.0-or-later
@@ -10,27 +10,28 @@ license    :
 component  : desktop.kde.core
 summary    : Tools to better interact with the system
 description: |
-    Tools based on KDE Frameworks 5 to better interact with the system.
-optimize   : lto
+    Tools based on KDE Frameworks 6 to better interact with the system.
 builddeps  :
-    - pkgconfig(Qt5Svg)
-    - pkgconfig(Qt5X11Extras)
-    - pkgconfig(x11)
-    - kactivities-devel
-    - kcmutils-devel
-    - kdeclarative-devel
-    - kdoctools-devel
-    - kdesu-devel
-    - kiconthemes-devel
-    - kinit-devel
-    - kparts-devel
-    - plasma-workspace-devel
-patterns   :
-    - /usr/lib64/libkdeinit5*
+    - pkgconfig(Qt6Svg)
+    - kf6-kconfig-devel
+    - kf6-kdoctools-devel
+    - kf6-kiconthemes-devel
+    - kf6-ki18n-devel
+    - kf6-kcmutils-devel
+    - kf6-kio-devel
+    - kf6-kservice-devel
+    - kf6-kwindowsystem-devel
+    - kf6-kparts-devel
+    - kf6-kcoreaddons-devel
+    - kf6-kdesu-devel
+clang      : yes
+optimize   : lto
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
     %ninja_install
     rm -rf $installdir/usr/share/doc
+# patterns   :
+#     - /usr/lib64/libkdeinit5*
