@@ -30,9 +30,10 @@
             <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/yakuake.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/yakuake.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/yakuake.png</Path>
-            <Path fileType="data">/usr/share/knotifications5/yakuake.notifyrc</Path>
+            <Path fileType="data">/usr/share/knotifications6/yakuake.notifyrc</Path>
             <Path fileType="data">/usr/share/knsrcfiles/yakuake.knsrc</Path>
             <Path fileType="localedata">/usr/share/locale/ar/LC_MESSAGES/yakuake.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ast/LC_MESSAGES/yakuake.mo</Path>
             <Path fileType="localedata">/usr/share/locale/az/LC_MESSAGES/yakuake.mo</Path>
             <Path fileType="localedata">/usr/share/locale/be/LC_MESSAGES/yakuake.mo</Path>
             <Path fileType="localedata">/usr/share/locale/bg/LC_MESSAGES/yakuake.mo</Path>
@@ -52,6 +53,7 @@
             <Path fileType="localedata">/usr/share/locale/fr/LC_MESSAGES/yakuake.mo</Path>
             <Path fileType="localedata">/usr/share/locale/ga/LC_MESSAGES/yakuake.mo</Path>
             <Path fileType="localedata">/usr/share/locale/gl/LC_MESSAGES/yakuake.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/he/LC_MESSAGES/yakuake.mo</Path>
             <Path fileType="localedata">/usr/share/locale/hi/LC_MESSAGES/yakuake.mo</Path>
             <Path fileType="localedata">/usr/share/locale/hne/LC_MESSAGES/yakuake.mo</Path>
             <Path fileType="localedata">/usr/share/locale/hr/LC_MESSAGES/yakuake.mo</Path>
@@ -217,9 +219,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="57">
-            <Date>2024-02-11</Date>
-            <Version>23.08.4</Version>
+        <Update release="58">
+            <Date>2024-02-12</Date>
+            <Version>24.01.95</Version>
             <Comment>Packaging update</Comment>
             <Name>Reilly Brogan</Name>
             <Email>solus@reillybrogan.com</Email>
