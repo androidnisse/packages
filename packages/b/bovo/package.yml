@@ -1,8 +1,8 @@
 name       : bovo
-version    : 23.08.4
-release    : 70
+version    : 24.01.95
+release    : 71
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/bovo-23.08.4.tar.xz : 42605e0001499aa7b5dda1f299812c156760eaee4cb5993bcc96e66ddadc60ce
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/bovo-24.01.95.tar.xz : 54a8ddcfd563c7b8e4e79339e129a6fe52c1810f5b433f20b9e8a22250285e9b
 homepage   : https://kde.org/applications/games/org.kde.bovo
 license    :
     - GFDL-1.2-or-later
@@ -12,17 +12,17 @@ summary    : A Gomoku like game for two players
 description: |
     Bovo is a Gomoku like game for two players, where the opponents alternate in placing their respective pictogram on the game board. Also known as Connect Five, Five in a row, X and O, Naughts and Crosses.
 builddeps  :
-    - pkgconfig(Qt5Quick)
-    - pkgconfig(Qt5Svg)
-    - kcompletion-devel
-    - kcrash-devel
-    - kdbusaddons-devel
-    - kdoctools-devel
-    - ki18n-devel
-    - kxmlgui-devel
+    - pkgconfig(Qt6Quick)
+    - pkgconfig(Qt6Svg)
+    - kf6-kcompletion-devel
+    - kf6-kcrash-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kdoctools-devel
+    - kf6-ki18n-devel
+    - kf6-kxmlgui-devel
     - libkdegames-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
