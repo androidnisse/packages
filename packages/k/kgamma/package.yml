@@ -1,0 +1,31 @@
+name       : kgamma
+version    : 5.93.0
+release    : 1
+source     :
+    - https://download.kde.org/unstable/plasma/5.93.0/kgamma-5.93.0.tar.xz : 6bc874d16d2db56173fab55b34b21bb6d6c8362613973564224d5c0c7f46cc17
+homepage   : https://www.kde.org/workspaces/plasmadesktop/
+license    : GPL-2.0-or-later
+component  : desktop.kde.core
+summary    : Adjust your monitor's gamma settings
+description: |
+    Adjust your monitor's gamma settings.
+builddeps  :
+    - pkgconfig(Qt6Core)
+    - pkgconfig(xxf86vm)
+    - kf6-kcmutils-devel
+    - kf6-kconfig-devel
+    - kf6-kconfigwidgets-devel
+    - kf6-kdoctools-devel
+    - kf6-ki18n-devel
+clang      : yes
+optimize   : lto
+setup      : |
+    %cmake_kf6
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
+    rm -rfv $installdir/usr/share/doc
+replaces   :
+    - kgamma5
+    - dbginfo : kgamma5-dbginfo
