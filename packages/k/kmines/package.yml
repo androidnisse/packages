@@ -1,0 +1,32 @@
+name       : kmines
+version    : 24.01.95
+release    : 1
+source     :
+    - https://download.kde.org/unstable/release-service/24.01.95/src/kmines-24.01.95.tar.xz : 2adefcf669232f8be07551d770b25b5d87b883c7b85475fa76ce09bab6333393
+homepage   : https://apps.kde.org/kmines/
+license    : GPL-2.0-or-later
+component  : games.puzzle
+summary    : A Minesweeper game.
+description: |
+    KMines is a classic Minesweeper game. The idea is to uncover all the squares without blowing up any mines. When a mine is blown up, the game is over.
+builddeps  :
+    - pkgconfig(Qt6Core)
+    - extra-cmake-modules
+    - kf6-kcompletion-devel
+    - kf6-kconfig-devel
+    - kf6-kconfigwidgets-devel
+    - kf6-kcoreaddons-devel
+    - kf6-kcrash-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kdoctools-devel
+    - kf6-ki18n-devel
+    - kf6-ktextwidgets-devel
+    - kf6-kwidgetsaddons-devel
+    - kf6-kxmlgui-devel
+    - libkdegames-devel
+setup      : |
+    %cmake_kf6
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
