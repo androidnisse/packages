@@ -3,8 +3,8 @@
         <Name>kbackup</Name>
         <Homepage>https://apps.kde.org/en/kbackup</Homepage>
         <Packager>
-            <Name>Joey Riches</Name>
-            <Email>josephriches@gmail.com</Email>
+            <Name>Reilly Brogan</Name>
+            <Email>solus@reillybrogan.com</Email>
         </Packager>
         <License>GPL-2.0-or-later</License>
         <PartOf>network.util</PartOf>
@@ -29,8 +29,8 @@
             <Path fileType="data">/usr/share/icons/hicolor/22x22/actions/kbackup_start.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/kbackup.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/32x32/mimetypes/text-x-kbp.png</Path>
-            <Path fileType="data">/usr/share/kxmlgui5/kbackup/kbackupui.rc</Path>
             <Path fileType="localedata">/usr/share/locale/ar/LC_MESSAGES/kbackup.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/ast/LC_MESSAGES/kbackup.mo</Path>
             <Path fileType="localedata">/usr/share/locale/ca/LC_MESSAGES/kbackup.mo</Path>
             <Path fileType="localedata">/usr/share/locale/ca@valencia/LC_MESSAGES/kbackup.mo</Path>
             <Path fileType="localedata">/usr/share/locale/cs/LC_MESSAGES/kbackup.mo</Path>
@@ -38,6 +38,7 @@
             <Path fileType="localedata">/usr/share/locale/de/LC_MESSAGES/kbackup.mo</Path>
             <Path fileType="localedata">/usr/share/locale/el/LC_MESSAGES/kbackup.mo</Path>
             <Path fileType="localedata">/usr/share/locale/en_GB/LC_MESSAGES/kbackup.mo</Path>
+            <Path fileType="localedata">/usr/share/locale/eo/LC_MESSAGES/kbackup.mo</Path>
             <Path fileType="localedata">/usr/share/locale/es/LC_MESSAGES/kbackup.mo</Path>
             <Path fileType="localedata">/usr/share/locale/et/LC_MESSAGES/kbackup.mo</Path>
             <Path fileType="localedata">/usr/share/locale/eu/LC_MESSAGES/kbackup.mo</Path>
@@ -71,18 +72,19 @@
             <Path fileType="man">/usr/share/man/man1/kbackup.1</Path>
             <Path fileType="man">/usr/share/man/nl/man1/kbackup.1</Path>
             <Path fileType="man">/usr/share/man/sv/man1/kbackup.1</Path>
+            <Path fileType="man">/usr/share/man/tr/man1/kbackup.1</Path>
             <Path fileType="man">/usr/share/man/uk/man1/kbackup.1</Path>
             <Path fileType="data">/usr/share/metainfo/org.kde.kbackup.appdata.xml</Path>
             <Path fileType="data">/usr/share/mime/packages/kbackup.xml</Path>
         </Files>
     </Package>
     <History>
-        <Update release="23">
-            <Date>2023-12-09</Date>
-            <Version>23.08.4</Version>
+        <Update release="24">
+            <Date>2024-02-12</Date>
+            <Version>24.01.95</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joey Riches</Name>
-            <Email>josephriches@gmail.com</Email>
+            <Name>Reilly Brogan</Name>
+            <Email>solus@reillybrogan.com</Email>
         </Update>
     </History>
 </PISI>

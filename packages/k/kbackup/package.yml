@@ -1,8 +1,8 @@
 name       : kbackup
-version    : 23.08.4
-release    : 23
+version    : 24.01.95
+release    : 24
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kbackup-23.08.4.tar.xz : e9237167c5641b2eb04dfe3708cf86128ef0894a8dfce37611cdff3558784d8b
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kbackup-24.01.95.tar.xz : c175cfcdec53a143536c2a3ca920520728fbdf454348a1ae3ef3b03f1fd4e499
 homepage   : https://apps.kde.org/en/kbackup
 license    : GPL-2.0-or-later
 component  : network.util
@@ -10,15 +10,18 @@ summary    : KBackup is an application which lets you back up your data in a sim
 description: |
     KBackup is an application which lets you back up your data in a simple, user friendly way
 builddeps  :
+    - pkgconfig(Qt6Core5Compat)
     - pkgconfig(libarchive)
-    - karchive-devel
-    - kdoctools-devel
-    - kio-devel
-    - kiconthemes-devel
-    - kguiaddons-devel
-    - knotifications-devel
+    - kf6-karchive-devel
+    - kf6-kdoctools-devel
+    - kf6-kio-devel
+    - kf6-kiconthemes-devel
+    - kf6-kguiaddons-devel
+    - kf6-knotifications-devel
+    - kf6-kstatusnotifieritem-devel
+    - kf6-kxmlgui-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
