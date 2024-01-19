@@ -1,8 +1,8 @@
 name       : kamera
-version    : 23.08.4
-release    : 70
+version    : 24.01.95
+release    : 71
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kamera-23.08.4.tar.xz : 8ae97b59959f1168c82bd70263813c2ccb2f06838cf79a2e3c68b1fa84501791
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kamera-24.01.95.tar.xz : 9e5865d1fce75b675fc65a750e85a2210fd9818ee45bb4d7fc859792fda1d00a
 homepage   : https://kde.org/applications/utilities/org.kde.kamera
 license    :
     - GFDL-1.2-or-later
@@ -12,12 +12,13 @@ summary    : KDE integration for gphoto2 cameras
 description: |
     KDE integration for gphoto2 cameras.
 builddeps  :
+    - pkgconfig(Qt6Core5Compat)
     - pkgconfig(libgphoto2)
-    - kcmutils-devel
-    - kdoctools-devel
-    - kio-devel
+    - kf6-kcmutils-devel
+    - kf6-kdoctools-devel
+    - kf6-kio-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
