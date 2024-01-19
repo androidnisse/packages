@@ -1,8 +1,8 @@
 name       : kcharselect
-version    : 23.08.4
-release    : 62
+version    : 24.01.95
+release    : 63
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kcharselect-23.08.4.tar.xz : 53a093196b70a39b522e1d2120ee568a73146ff0e571dedcac9a9cce50aa8d95
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kcharselect-24.01.95.tar.xz : 76ed4a26d899ded09e9e62e7841c357d137600620b3462939b7345fd5772576d
 homepage   : https://kde.org/applications/utilities/org.kde.kcharselect
 license    : GPL-2.0-or-later
 component  : desktop.kde.core
@@ -11,13 +11,13 @@ description: |
     KCharSelect is a tool to select special characters from all installed fonts and copy them into the clipboard.
 optimize   : lto
 builddeps  :
-    - kbookmarks-devel
-    - kcrash-devel
-    - kdoctools-devel
-    - ki18n-devel
-    - kxmlgui-devel
+    - kf6-kbookmarks-devel
+    - kf6-kcrash-devel
+    - kf6-kdoctools-devel
+    - kf6-ki18n-devel
+    - kf6-kxmlgui-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
