@@ -1,8 +1,8 @@
 name       : falkon
-version    : 23.08.4
-release    : 33
+version    : 24.01.95
+release    : 34
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/falkon-23.08.4.tar.xz : f08484b768ccc7cfc097d473c1ccc66986f839f79b5f3516a9aeba4ee7286d63
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/falkon-24.01.95.tar.xz : 28ae17f3d3cdac237acdd206563a905650574a239f3f23cb368ca63ed28d08b1
 homepage   : https://www.falkon.org/
 license    : GPL-3.0-or-later
 component  : network.web.browser
@@ -12,19 +12,19 @@ description: |
 replaces   :
     - qupzilla
 builddeps  :
-    - pkgconfig(Qt5Designer)
-    - pkgconfig(Qt5WebEngine)
-    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(Qt6Core5Compat)
+    - pkgconfig(Qt6Designer)
+    - qt6-webengine-devel
     - pkgconfig(xcb-atom)
-    - karchive-devel
-    - kcrash-devel
-    - ki18n-devel
-    - kio-devel
-    - kwallet-devel
-    - kwindowsystem-devel
-    - purpose-devel
+    - kf6-karchive-devel
+    - kf6-kcrash-devel
+    - kf6-ki18n-devel
+    - kf6-kio-devel
+    - kf6-kwallet-devel
+    - kf6-kwindowsystem-devel
+    - kf6-purpose-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
