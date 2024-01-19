@@ -1,8 +1,8 @@
 name       : kalzium
-version    : 23.08.4
-release    : 16
+version    : 24.01.95
+release    : 17
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kalzium-23.08.4.tar.xz : a80c9c7170bd1f20e5332bc33caa5c369772271445f503520249d16421d37b3e
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kalzium-24.01.95.tar.xz : a6f56523453a411ece2accfae44b0fb159179ae856d1a96a9b643fb04dccc8ea
 homepage   : https://apps.kde.org/kalzium/
 license    : GPL-2.0-or-later
 component  : desktop
@@ -10,17 +10,19 @@ summary    : Periodic Table of Elements
 description: |
     Periodic Table of Elements
 builddeps  :
-    - pkgconfig(Qt5Script)
-    - pkgconfig(Qt5Svg)
-    - karchive-devel
-    - kdoctools-devel
-    - kparts-devel
-    - kplotting-devel
-    - kunitconversion-devel
+    - pkgconfig(Qt6Core5Compat)
+    - pkgconfig(Qt6StateMachine)
+    - pkgconfig(Qt6Svg)
+    - kf6-karchive-devel
+    - kf6-kdoctools-devel
+    - kf6-kparts-devel
+    - kf6-kplotting-devel
+    - kf6-ktextwidgets-devel
+    - kf6-kunitconversion-devel
     - ocaml
     - eigen3
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_WITH_QT6=ON
 build      : |
     %ninja_build
 install    : |
