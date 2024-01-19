@@ -1,8 +1,8 @@
 name       : colord-kde
-version    : 23.08.4
-release    : 6
+version    : 24.01.95
+release    : 7
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/colord-kde-23.08.4.tar.xz : bbd70d538cd64147ef13b5cfc30fac0e8bd04da787c6bca62c803209d5e974a8
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/colord-kde-24.01.95.tar.xz : e597e4a97dbd34e1005bd72f83e3171cb4f59ba86323f40a7f25e7f9ec548955
 homepage   : https://userbase.kde.org/Color_Management
 license    :
     - GPL-2.0-or-later
@@ -11,20 +11,19 @@ summary    : Interfaces and session daemon to colord for KDE
 description: |
     Interfaces and session daemon to colord for KDE
 builddeps  :
-    - pkgconfig(Qt5X11Extras)
     - pkgconfig(lcms2)
     - pkgconfig(xrandr)
-    - kcmutils-devel
-    - kdbusaddons-devel
-    - kdeclarative-devel
-    - ki18n-devel
-    - kitemmodels-devel
-    - kpackage-devel
-    - kwindowsystem-devel
+    - kf6-kcmutils-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kdeclarative-devel
+    - kf6-ki18n-devel
+    - kf6-kitemmodels-devel
+    - kf6-kpackage-devel
+    - kf6-kwindowsystem-devel
 rundeps    :
     - kirigami-addons
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
