@@ -1,7 +1,7 @@
 komparenavtreepart.so:qt_plugin_instance
-komparenavtreepart.so:qt_plugin_query_metadata
+komparenavtreepart.so:qt_plugin_query_metadata_v2
 komparepart.so:qt_plugin_instance
-komparepart.so:qt_plugin_query_metadata
+komparepart.so:qt_plugin_query_metadata_v2
 libkomparedialogpages.so.5:_ZN12ViewSettings11qt_metacallEN11QMetaObject4CallEiPPv
 libkomparedialogpages.so.5:_ZN12ViewSettings11qt_metacastEPKc
 libkomparedialogpages.so.5:_ZN12ViewSettings12loadSettingsEP7KConfig
