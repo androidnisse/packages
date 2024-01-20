@@ -1,8 +1,8 @@
 name       : libkmahjongg
-version    : 23.08.4
-release    : 49
+version    : 24.01.95
+release    : 50
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/libkmahjongg-23.08.4.tar.xz : 3052bd39de55d70bc543711a629c5aa12f2dcc06d64a937370921002e6fde232
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/libkmahjongg-24.01.95.tar.xz : ea56b4e32db11b24f4de17965c4b8da005b219544287d9482ae5b9cbab32b0bf
 homepage   : https://kde.org/
 license    : GPL-2.0-or-later
 component  : desktop.library
@@ -10,12 +10,15 @@ summary    : Common code and assets for Kmahjonhgg
 description: |
     Library providing common code and assets for Kmahjonhgg.
 builddeps  :
-    - pkgconfig(Qt5Svg)
-    - kcompletion-devel
-    - kconfigwidgets-devel
-    - ki18n-devel
+    - pkgconfig(Qt6Svg)
+    - kf6-kcompletion-devel
+    - kf6-kconfig-devel
+    - kf6-kconfigwidgets-devel
+    - kf6-kcoreaddons-devel
+    - kf6-ki18n-devel
+    - kf6-kwidgetsaddons-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
