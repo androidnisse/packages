@@ -1,8 +1,8 @@
 name       : kgeography
-version    : 23.08.4
-release    : 72
+version    : 24.01.95
+release    : 73
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kgeography-23.08.4.tar.xz : 8f1b6008185a0e4974959d9e1b89d14243219ed93841de498861de5c93c5db1a
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kgeography-24.01.95.tar.xz : 93129e15a3d40933c399c7c629bf3985e5f6782534569b1e30c7dbed04558371
 homepage   : https://kde.org/applications/education/org.kde.kgeography
 license    :
     - GFDL-1.2-or-later
@@ -12,12 +12,13 @@ summary    : KGeography is a geography learning tool
 description: |
     KGeography is a geography learning tool
 builddeps  :
-    - kcrash-devel
-    - kdoctools-devel
-    - kio-devel
-    - kiconthemes-devel
+    - kf6-kcrash-devel
+    - kf6-kdoctools-devel
+    - kf6-kio-devel
+    - kf6-kiconthemes-devel
+    - kf6-kxmlgui-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
