@@ -9,4 +9,4 @@ kget_metalinkfactory.so
 kget_mirrorsearchfactory.so
 kget_mmsfactory.so
 kget_multisegkiofactory.so
-libkgetcore.so.5
+libkgetcore.so.6
