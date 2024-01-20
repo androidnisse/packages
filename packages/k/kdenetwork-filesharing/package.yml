@@ -1,8 +1,8 @@
 name       : kdenetwork-filesharing
-version    : 23.08.4
-release    : 60
+version    : 24.01.95
+release    : 61
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kdenetwork-filesharing-23.08.4.tar.xz : 923e5be86069da067df1814bbbb79cb8d3d8f35a5f98e1b2d183492484dd5fec
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kdenetwork-filesharing-24.01.95.tar.xz : b11cc634df2ab202d09005c1b20e54259f4982da9e4724688f0dc34ef4523aa6
 homepage   : https://kde.org/
 license    :
     - GFDL-1.2-or-later
@@ -13,13 +13,14 @@ description: |
     Network file sharing integration for dolphin.
 optimize   : lto
 builddeps  :
-    - kdeclarative-devel
-    - kio-devel
-    - qcoro-qt5-devel
+    - kf6-kauth-devel
+    - kf6-kdeclarative-devel
+    - kf6-kio-devel
+    - qcoro-qt6-devel
 setup      : |
-    %cmake_ninja -DSAMBA_INSTALL=OFF
+    %cmake_kf6 -DSAMBA_INSTALL=OFF
 build      : |
     %ninja_build
 install    : |
     %ninja_install
-    %qml_cache
+    %qml6_cache
