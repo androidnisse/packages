@@ -1,8 +1,8 @@
 name       : kdebugsettings
-version    : 23.08.4
-release    : 56
+version    : 24.01.95
+release    : 57
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kdebugsettings-23.08.4.tar.xz : 60eade88ad4dc0f64471bcfcaf349fee5a99592a8c7422a179759514300311da
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kdebugsettings-24.01.95.tar.xz : 75684fc92cb40c5483683b2c2a987867964cc404afce85c640e908cdbb81f21f
 homepage   : https://kde.org/applications/development/org.kde.kdebugsettings
 license    : LGPL-2.0-or-later
 component  : desktop.kde
@@ -10,16 +10,16 @@ summary    : Application to enable/disable qCDebug
 description: |
     An application to enable/disable qCDebug.
 builddeps  :
-    - kcompletion-devel
-    - kconfig-devel
-    - kcoreaddons-devel
-    - kdbusaddons-devel
-    - ki18n-devel
+    - kf6-kcompletion-devel
+    - kf6-kconfig-devel
+    - kf6-kcoreaddons-devel
+    - kf6-kdbusaddons-devel
+    - kf6-ki18n-devel
     - kitemviews-devel
-    - kxmlgui-devel
-    - kwidgetsaddons-devel
+    - kf6-kxmlgui-devel
+    - kf6-kwidgetsaddons-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
