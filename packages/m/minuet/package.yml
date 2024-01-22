@@ -1,8 +1,8 @@
 name       : minuet
-version    : 23.08.4
-release    : 74
+version    : 24.01.95
+release    : 75
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/minuet-23.08.4.tar.xz : af8760025c815189bf0766e7d4eda4b14faf55cd8060f03f7f2ee215d9e338f3
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/minuet-24.01.95.tar.xz : 64c7f88d72f4c1f2d67c4a753b77a4b308fdcdea1b501f1f6b1b0209d4a66fc6
 homepage   : https://kde.org/applications/education/org.kde.minuet
 license    :
     - GPL-2.0-or-later
@@ -13,17 +13,15 @@ description: |
     Minuet aims at supporting students and teachers in many aspects of music education, such as ear training, first-sight reading, solfa, scales, rhythm, harmony, and improvisation. Minuet makes extensive use of MIDI capabilities to provide a full-fledged set of features regarding volume, tempo, and pitch changes, which makes Minuet a valuable tool for both novice and experienced musicians.
 builddeps  :
     - pkgconfig(fluidsynth)
-    - pkgconfig(Qt5Quick)
-    - pkgconfig(Qt5QuickControls2)
-    - pkgconfig(Qt5Svg)
-    - kcoreaddons-devel
-    - kcrash-devel
-    - kdoctools-devel
-    - ki18n-devel
-rundeps    :
-    - qt5-quickcontrols2
+    - pkgconfig(Qt6Quick)
+    - pkgconfig(Qt6QuickControls2)
+    - pkgconfig(Qt6Svg)
+    - kf6-kcoreaddons-devel
+    - kf6-kcrash-devel
+    - kf6-kdoctools-devel
+    - kf6-ki18n-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6 -DBUILD_WITH_QT6=ON
 build      : |
     %ninja_build
 install    : |

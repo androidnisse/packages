@@ -3,8 +3,8 @@
         <Name>minuet</Name>
         <Homepage>https://kde.org/applications/education/org.kde.minuet</Homepage>
         <Packager>
-            <Name>Joey Riches</Name>
-            <Email>josephriches@gmail.com</Email>
+            <Name>Reilly Brogan</Name>
+            <Email>solus@reillybrogan.com</Email>
         </Packager>
         <License>GPL-2.0-or-later</License>
         <License>GFDL-1.3-or-later</License>
@@ -23,7 +23,7 @@
         <Files>
             <Path fileType="executable">/usr/bin/minuet</Path>
             <Path fileType="library">/usr/lib64/libminuetinterfaces.so.0.3.0</Path>
-            <Path fileType="library">/usr/lib64/qt5/plugins/minuet/minuetfluidsynthsoundcontroller.so</Path>
+            <Path fileType="library">/usr/lib64/qt6/plugins/minuet/minuetfluidsynthsoundcontroller.so</Path>
             <Path fileType="data">/usr/share/applications/org.kde.minuet.desktop</Path>
             <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/minuet.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/minuet.svg</Path>
@@ -79,8 +79,10 @@
             <Path fileType="localedata">/usr/share/locale/uk/LC_MESSAGES/minuet.mo</Path>
             <Path fileType="localedata">/usr/share/locale/zh_CN/LC_MESSAGES/minuet.mo</Path>
             <Path fileType="localedata">/usr/share/locale/zh_TW/LC_MESSAGES/minuet.mo</Path>
-            <Path fileType="data">/usr/share/metainfo/org.kde.minuet.appdata.xml</Path>
-            <Path fileType="data">/usr/share/minuet/definitions/chords-root-position-definitions.json</Path>
+            <Path fileType="data">/usr/share/metainfo/org.kde.minuet.metainfo.xml</Path>
+            <Path fileType="data">/usr/share/minuet/definitions/chords-extended-definitions.json</Path>
+            <Path fileType="data">/usr/share/minuet/definitions/chords-sevenths-definitions.json</Path>
+            <Path fileType="data">/usr/share/minuet/definitions/chords-three-notes-definitions.json</Path>
             <Path fileType="data">/usr/share/minuet/definitions/intervals-ascending-melodic-harmonic-definitions.json</Path>
             <Path fileType="data">/usr/share/minuet/definitions/intervals-descending-melodic-definitions.json</Path>
             <Path fileType="data">/usr/share/minuet/definitions/rhythm-definitions.json</Path>
@@ -90,7 +92,10 @@
             <Path fileType="data">/usr/share/minuet/definitions/scales-major-and-its-modes-definitions.json</Path>
             <Path fileType="data">/usr/share/minuet/definitions/scales-pentatonic-major-and-its-modes-definitions.json</Path>
             <Path fileType="data">/usr/share/minuet/definitions/scales-simmetric-definitions.json</Path>
-            <Path fileType="data">/usr/share/minuet/exercises/chords-root-position-exercises.json</Path>
+            <Path fileType="data">/usr/share/minuet/exercises/chords-combined-exercises.json</Path>
+            <Path fileType="data">/usr/share/minuet/exercises/chords-extended-exercises.json</Path>
+            <Path fileType="data">/usr/share/minuet/exercises/chords-sevenths-exercises.json</Path>
+            <Path fileType="data">/usr/share/minuet/exercises/chords-three-notes-exercises.json</Path>
             <Path fileType="data">/usr/share/minuet/exercises/intervals-ascending-melodic-exercises.json</Path>
             <Path fileType="data">/usr/share/minuet/exercises/intervals-descending-melodic-exercises.json</Path>
             <Path fileType="data">/usr/share/minuet/exercises/intervals-harmonic-exercises.json</Path>
@@ -112,7 +117,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="74">minuet</Dependency>
+            <Dependency release="75">minuet</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/minuet/interfaces/icore.h</Path>
@@ -126,12 +131,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="74">
-            <Date>2023-12-09</Date>
-            <Version>23.08.4</Version>
+        <Update release="75">
+            <Date>2024-02-12</Date>
+            <Version>24.01.95</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joey Riches</Name>
-            <Email>josephriches@gmail.com</Email>
+            <Name>Reilly Brogan</Name>
+            <Email>solus@reillybrogan.com</Email>
         </Update>
     </History>
 </PISI>
