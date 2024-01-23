@@ -1,8 +1,8 @@
 name       : libkexiv2
-version    : 23.08.4
-release    : 72
+version    : 24.01.95
+release    : 73
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/libkexiv2-23.08.4.tar.xz : a060a1fa36118c496ab0f0afa2efe4a7532c16ce6e4b7b4fa8fc00305688f3f6
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/libkexiv2-24.01.95.tar.xz : c405da05f219c1c56b18cb7511654453d2e11999fa5af54cd61e9f1b46ca8889
 homepage   : https://kde.org/
 license    : GPL-2.0-or-later
 component  : programming
@@ -14,10 +14,10 @@ builddeps  :
     - pkgconfig(libcurl)
     - pkgconfig(exiv2)
     - pkgconfig(libssh)
-    - pkgconfig(Qt5Core)
+    - pkgconfig(Qt6Core)
     - extra-cmake-modules
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_WITH_QT6=ON
 build      : |
     %ninja_build
 install    : |
