@@ -1,8 +1,8 @@
 name       : kshisen
-version    : 23.08.4
-release    : 49
+version    : 24.01.95
+release    : 50
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kshisen-23.08.4.tar.xz : 393203f6a69fa291a2e353599e81abf804dca7a9af160fc0948ae0d37ff1b2dd
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kshisen-24.01.95.tar.xz : d6e063e0ae8ea80473a94cdad08efbf933622eda157e768bf94eb517873d5d98
 homepage   : https://kde.org/applications/games/org.kde.kshisen
 license    :
     - GFDL-1.2-or-later
@@ -14,19 +14,19 @@ description: |
     You can remove matching pieces if they can be connected with a line with at most two bends in it. At the same time, the line must not cross any other tiles.
     To win a game of Shisen-Sho the player has to remove all the tiles from the game board.
 builddeps  :
-    - pkgconfig(Qt5Quick)
-    - kcompletion-devel
-    - kcrash-devel
-    - kdbusaddons-devel
-    - kdoctools-devel
-    - ki18n-devel
-    - kxmlgui-devel
+    - pkgconfig(Qt6Quick)
+    - kf6-kcompletion-devel
+    - kf6-kcrash-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kdoctools-devel
+    - kf6-ki18n-devel
+    - kf6-kxmlgui-devel
     - libkdegames-devel
     - libkmahjongg-devel
 rundeps    :
     - kmahjongg
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
