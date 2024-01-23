@@ -1,8 +1,8 @@
 name       : krdc
-version    : 23.08.4
-release    : 55
+version    : 24.01.95
+release    : 56
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/krdc-23.08.4.tar.xz : 985a6f6af9e2a5685dd95b629fa666211ef36eb1272fac43dc0511f33daa484d
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/krdc-24.01.95.tar.xz : c64ae9cddd59542596baadc0de61c337118c94a4b738b64b98f3b2f3672bd840
 homepage   : https://kde.org/applications/internet/org.kde.krdc
 license    :
     - GFDL-1.2-or-later
@@ -16,20 +16,23 @@ builddeps  :
     - pkgconfig(freerdp2)
     - pkgconfig(libssh)
     - pkgconfig(libvncserver)
-    - kbookmarks-devel
-    - kcmutils-devel
-    - kcompletion-devel
-    - kdnssd-devel
-    - ki18n-devel
-    - kiconthemes-devel
-    - knotifyconfig-devel
-    - kwallet-devel
-    - kwindowsystem-devel
-    - kxmlgui-devel
+    - kf6-kbookmarks-devel
+    - kf6-kcmutils-devel
+    - kf6-kcompletion-devel
+    - kf6-kdnssd-devel
+    - kf6-ki18n-devel
+    - kf6-kio-devel
+    - kf6-kiconthemes-devel
+    - kf6-knotifications-devel
+    - kf6-knotifyconfig-devel
+    - kf6-kstatusnotifieritem-devel
+    - kf6-kwallet-devel
+    - kf6-kwindowsystem-devel
+    - kf6-kxmlgui-devel
 rundeps    :
     - freerdp
 setup      : |
-    %cmake_ninja
+    %cmake_kf6 -DBUILD_WITH_QT6=ON
 build      : |
     %ninja_build
 install    : |
