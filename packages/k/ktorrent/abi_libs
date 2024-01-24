@@ -1,0 +1,10 @@
+BandwidthSchedulerPlugin.so
+DownloadOrderPlugin.so
+InfoWidgetPlugin.so
+LogViewerPlugin.so
+MagnetGeneratorPlugin.so
+ScanFolderPlugin.so
+ScanForLostFilesPlugin.so
+ShutdownPlugin.so
+UPnPPlugin.so
+libktcore.so.16

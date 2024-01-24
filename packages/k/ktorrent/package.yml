@@ -1,0 +1,41 @@
+name       : ktorrent
+version    : 24.01.95
+release    : 1
+source     :
+    - https://download.kde.org/unstable/release-service/24.01.95/src/ktorrent-24.01.95.tar.xz : b4ec56f6eef29de2aebf08379eed76ad703266471e9f020e97022cf5f607f74c
+homepage   : https://apps.kde.org/ktorrent
+license    : GPL-2.0-or-later
+component  : network.client
+summary    : BitTorrent application by KDE
+description: |
+    KTorrent is a BitTorrent application by KDE which allows you to download files using the BitTorrent protocol. It enables you to run multiple torrents at the same time and comes with extended features to make it a full-featured client for BitTorrent.
+builddeps  :
+    - pkgconfig(Qt6Core)
+    - pkgconfig(Qt6Core5Compat)
+    - extra-cmake-modules
+    - kf6-kcmutils-devel
+    - kf6-kconfig-devel
+    - kf6-kconfigwidgets-devel
+    - kf6-kcoreaddons-devel
+    - kf6-kcrash-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kglobalaccel-devel
+    - kf6-ki18n-devel
+    - kf6-kiconthemes-devel
+    - kf6-kio-devel
+    - kf6-knotifications-devel
+    - kf6-knotifyconfig-devel
+    - kf6-kparts-devel
+    - kf6-kstatusnotifieritem-devel
+    - kf6-kwidgetsaddons-devel
+    - kf6-kwindowsystem-devel
+    - kf6-kxmlgui-devel
+    - kf6-solid-devel
+    - libboost-devel
+    - libktorrent-devel
+setup      : |
+    %cmake_kf6
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
