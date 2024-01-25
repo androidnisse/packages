@@ -1,8 +1,8 @@
 name       : grantleetheme
-version    : 23.08.4
-release    : 68
+version    : 24.01.95
+release    : 69
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/grantleetheme-23.08.4.tar.xz : d81c9454d86f568218f852dbe31e67d0e547ea6d3ead5b1fe5c7267f20a5c32d
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/grantleetheme-24.01.95.tar.xz : 9156f13722b055d359488488fe73f8b9a71e7238cf93687112085a34839b2054
 homepage   : https://kde.org/
 license    : LGPL-2.1-or-later
 component  : desktop.library
@@ -10,17 +10,18 @@ summary    : GrantleeTheme library provides a class for loading theme packages c
 description: |
     GrantleeTheme library provides a class for loading theme packages containing sets of templates.
 builddeps  :
-    - grantlee-devel
-    - kguiaddons-devel
-    - ki18n-devel
-    - kiconthemes-devel
-    - knewstuff-devel
-    - kservice-devel
+    - kf6-kguiaddons-devel
+    - kf6-ki18n-devel
+    - kf6-kiconthemes-devel
+    - kf6-knewstuff-devel
+    - kf6-kservice-devel
+    - kf6-ktexttemplate-devel
+    - kf6-kxmlgui-devel
 rundeps    :
     - devel :
-        - grantlee-devel
+        - kf6-ktexttemplate-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
