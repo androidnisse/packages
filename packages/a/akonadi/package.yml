@@ -1,8 +1,8 @@
 name       : akonadi
-version    : 23.08.4
-release    : 92
+version    : 24.01.95
+release    : 93
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/akonadi-23.08.4.tar.xz : 63fb0372e935d4cc55af14f2b869f6042ed878813f98e6660204b3bb80ed4936
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/akonadi-24.01.95.tar.xz : 8ed67982986872af252c1e02514675a12e801856d3d1b249e00a3b5f3505e8ce
 license    : LGPL-2.1-or-later
 homepage   : https://kde.org
 summary    :
@@ -17,26 +17,27 @@ component  :
     - desktop.library
     - mariadb : desktop.library
 builddeps  :
-    - pkgconfig(accounts-qt5)
+    - pkgconfig(accounts-qt6)
     - pkgconfig(liblzma)
     - pkgconfig(libxslt)
     - pkgconfig(mariadb)
     - pkgconfig(sqlite3)
     - kaccounts-integration-devel
-    - kcrash-devel
-    - kiconthemes-devel
-    - kio-devel
-    - kitemmodels-devel
+    - kf6-kcrash-devel
+    - kf6-kiconthemes-devel
+    - kf6-kio-devel
+    - kf6-kitemmodels-devel
+    - kf6-kxmlgui-devel
     - libboost-devel
 rundeps    :
     - devel :
-        - kitemmodels-devel
+        - kf6-kitemmodels-devel
         - libboost-devel
     - mariadb :
         - mariadb-server
 setup      : |
     %patch -p1 -i $pkgfiles/0001-Update-Akonadi-apparmor-rules.patch
-    %cmake_ninja \
+    %cmake_kf6 \
         -DBUILD_TESTING=OFF \
         -DDATABASE_BACKEND=SQLITE \
         -DINSTALL_APPARMOR=ON
@@ -48,7 +49,7 @@ install    : |
 patterns   :
     - devel :
         - /usr/bin/akonadi_knut_resource
-        - /usr/lib64/qt5/plugins/akonadi/akonadi_test_searchplugin.so
+        - /usr/lib64/qt6/plugins/akonadi/akonadi_test_searchplugin.so
         - /usr/share/akonadi/agents/knutresource.desktop
         - /usr/share/kf5/akonadi_knut_resource/knut-template.xml
         - /usr/share/locale/*/LC_MESSAGES/akonadi_knut_resource.mo
