@@ -1,5 +1,7 @@
 akonadi_archivemail_agent
+akonadi_followupreminder_agent
 akonadi_mailfilter_agent
+akonadi_mailmerge_agent
 akonadi_sendlater_agent
 akonadi_unifiedmailbox_agent
 archivemailagentconfig.so
@@ -16,4 +18,5 @@ kmail
 kmailpart.so
 kontact_kmailplugin.so
 kontact_summaryplugin.so
-libkmailprivate.so.5
+libkmailprivate.so.6
+libmailfilteragentprivate.so.6
