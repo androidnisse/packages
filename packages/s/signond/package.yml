@@ -1,8 +1,8 @@
 name       : signond
-version    : 8.61
-release    : 7
+version    : '8.61'
+release    : 8
 source     :
-    - git|https://gitlab.com/accounts-sso/signond.git : VERSION_8.61
+    - git|https://gitlab.com/nicolasfella/signond.git : c8ad98249af541514ff7a81634d3295e712f1a39
 homepage   : https://gitlab.com/accounts-sso/signond
 license    : LGPL-2.1-only
 component  : programming
@@ -10,15 +10,16 @@ summary    : Qt SignOn Daemon
 description: |
     Framework to provide credential storage and authentication service for SSO
 builddeps  :
-    - pkgconfig(Qt5Help)
-    - pkgconfig(Qt5WebKit)
+    - pkgconfig(Qt6Designer)
     - doxygen
+clang      : yes
+optimize   : thin-lto
 setup      : |
     %patch -p1 -i $pkgfiles/0001-Disable-static-libs.patch
-    %qmake PREFIX=%PREFIX% LIBDIR=%libdir%
+    qmake6 PREFIX=%PREFIX% LIBDIR=%libdir%
 build      : |
     %make
-install    : |-
+install    : |
     %make_install INSTALL_ROOT="$installdir"
     # Remove HTML docs
     rm -rf $installdir/usr/share/doc/
