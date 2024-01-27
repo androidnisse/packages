@@ -1,8 +1,8 @@
 name       : kitinerary
-version    : 23.08.4
-release    : 75
+version    : 24.01.95
+release    : 76
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kitinerary-23.08.4.tar.xz : e1340a5c758ffc6b02b5939eaf4ed2fe9cdaeb7e6b3f54486c1ec5e3684d1824
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kitinerary-24.01.95.tar.xz : 73c787fd28a7ca3f7d47f1568a43602d6457d213239d8d6680c17fa1b03edb76
 homepage   : https://kde.org/
 license    : LGPL-2.1-or-later
 component  : programming.library
@@ -10,16 +10,16 @@ summary    : Data Model and Extraction System for Travel Reservation information
 description: |
     A library containing itinerary data model and itinerary extraction code.
 builddeps  :
-    - pkgconfig(Qt5Quick)
+    - pkgconfig(Qt6Quick)
     - pkgconfig(poppler)
     - pkgconfig(zxing)
-    - karchive-devel
-    - kcalendarcore-devel
-    - kcontacts-devel
+    - kf6-karchive-devel
+    - kf6-kcalendarcore-devel
+    - kf6-kcontacts-devel
     - kmime-devel
     - kpkpass-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
