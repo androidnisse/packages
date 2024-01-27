@@ -1,8 +1,8 @@
 name       : kidentitymanagement
-version    : 23.08.4
-release    : 70
+version    : 24.01.95
+release    : 71
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kidentitymanagement-23.08.4.tar.xz : 92736693685342c724034dd5675df858678f73fc1ed04189a7841e9b2237e89b
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kidentitymanagement-24.01.95.tar.xz : d1b42746a7ee66f38dacdd88202dedf201de8a1970f8e982816e7a09c4baf5fb
 homepage   : https://kde.org/
 license    : LGPL-2.1-or-later
 component  : desktop.library
@@ -10,14 +10,17 @@ summary    : Manage PIM identity
 description: |
     Manage PIM identity.
 builddeps  :
-    - kiconthemes-devel
-    - kio-devel
+    - kf6-kiconthemes-devel
+    - kf6-kio-devel
+    - kf6-kxmlgui-devel
+    - kirigami-addons-devel
     - kpimtextedit-devel
+    - ktextaddons-devel
 rundeps    :
     - devel :
         - kpimtextedit-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
