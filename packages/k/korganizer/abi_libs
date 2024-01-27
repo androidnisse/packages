@@ -16,6 +16,6 @@ korganizer_configtime.so
 korganizer_configviews.so
 korganizer_userfeedback.so
 korganizerpart.so
-libkorganizer_core.so.5
-libkorganizer_interfaces.so.5
-libkorganizerprivate.so.5
+libkorganizer_core.so.6
+libkorganizer_interfaces.so.6
+libkorganizerprivate.so.6
