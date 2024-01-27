@@ -1,8 +1,8 @@
 name       : mailcommon
-version    : 23.08.4
-release    : 74
+version    : 24.01.95
+release    : 75
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/mailcommon-23.08.4.tar.xz : 6ff8c12a6ae40e97f35603baffc43b34c6c725dedac1c0ebccd4474cf9fee987
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/mailcommon-24.01.95.tar.xz : 3f32af3357978af494650de438c7e55c60abcc9f60074153c7f21cfc55f6dffd
 homepage   : https://kde.org/
 license    :
     - GPL-2.0-or-later
@@ -12,18 +12,19 @@ summary    : MailCommon Library
 description: |
     MailCommon Library.
 builddeps  :
-    - pkgconfig(Qt5WebEngineWidgets)
-    - pkgconfig(phonon4qt5)
+    - pkgconfig(Qt6WebEngineWidgets)
+    - pkgconfig(phonon4qt6)
     - akonadi-contacts-devel
     - akonadi-mime-devel
-    - kcontacts-devel
-    - kdbusaddons-devel
+    - kf6-kcontacts-devel
+    - kf6-kdbusaddons-devel
     - kdesignerplugin-devel
-    - kguiaddons-devel
-    - kiconthemes-devel
+    - kf6-kguiaddons-devel
+    - kf6-kiconthemes-devel
     - kidentitymanagement-devel
     - kimap-devel
-    - kio-devel
+    - kf6-kio-devel
+    - kf6-kxmlgui-devel
     - kmailtransport-devel
     - ktextaddons-devel
     - libkdepim-devel
@@ -31,7 +32,7 @@ builddeps  :
     - mailimporter-devel
     - messagelib-devel
     - pimcommon-devel
-    - syntax-highlighting-devel
+    - kf6-syntax-highlighting-devel
 rundeps    :
     - devel :
         - akonadi-mime-devel
@@ -39,7 +40,7 @@ rundeps    :
         - libkleo-devel
         - messagelib-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
