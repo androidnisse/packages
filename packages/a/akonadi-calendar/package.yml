@@ -1,8 +1,8 @@
 name       : akonadi-calendar
-version    : 23.08.4
-release    : 73
+version    : 24.01.95
+release    : 74
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/akonadi-calendar-23.08.4.tar.xz : b8a6b260c3230d8336382d8398e3106e308148bf0d3e9dc1dd613e9533ce5e75
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/akonadi-calendar-24.01.95.tar.xz : 2a4978bd356c31763e066d7a4925a7af441102eb448207c2ba2c57d9c5fae542
 homepage   : https://kde.org/
 license    : LGPL-2.1-or-later
 component  : desktop.library
@@ -12,17 +12,18 @@ description: |
 builddeps  :
     - akonadi-contacts-devel
     - akonadi-mime-devel
-    - kcalendarcore-devel
+    - kf6-kcalendarcore-devel
     - kcalutils-devel
-    - kcontacts-devel
-    - kdbusaddons-devel
+    - kf6-kcontacts-devel
+    - kf6-kdbusaddons-devel
     - kidentitymanagement-devel
-    - kio-devel
+    - kf6-kio-devel
     - kmailtransport-devel
-    - knotifications-devel
+    - kf6-knotifications-devel
     - kpimtextedit-devel
     - ktextaddons-devel
-    - kwallet-devel
+    - kf6-kwallet-devel
+    - kf6-kxmlgui-devel
     - libkdepim-devel
     - libkleo-devel
     - messagelib-devel
@@ -30,9 +31,9 @@ builddeps  :
 rundeps    :
     - devel :
         - akonadi-devel
-        - kcalendarcore-devel
+        - kf6-kcalendarcore-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
