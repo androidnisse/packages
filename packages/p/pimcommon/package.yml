@@ -1,8 +1,8 @@
 name       : pimcommon
-version    : 23.08.4
-release    : 73
+version    : 24.01.95
+release    : 74
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/pimcommon-23.08.4.tar.xz : d4a979b2b290a4f6df0f1a03766fbf389f1497d9fb431e3b4afd9197cd69dd51
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/pimcommon-24.01.95.tar.xz : 5ea0ff97cf644a21182ed41a542afb6798d2fde4621481fd92df3c2eb038a8a8
 homepage   : https://kde.org/
 license    :
     - GPL-2.0-or-later
@@ -15,24 +15,24 @@ builddeps  :
     - akonadi-contacts-devel
     - akonadi-mime-devel
     - akonadi-search-devel
-    - karchive-devel
-    - kcalendarcore-devel
-    - kcmutils-devel
-    - kcontacts-devel
+    - kf6-karchive-devel
+    - kf6-kcalendarcore-devel
+    - kf6-kcmutils-devel
+    - kf6-kcontacts-devel
     - kldap-devel
-    - kio-devel
+    - kf6-kio-devel
     - kimap-devel
-    - knewstuff-devel
+    - kf6-knewstuff-devel
     - kpimtextedit-devel
     - ktextaddons-devel
     - libkdepim-devel
-    - purpose-devel
+    - kf6-purpose-devel
 rundeps    :
     - devel :
         - kimap-devel
         - akonadi-contacts-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
