@@ -1,8 +1,8 @@
 name       : kaccounts-integration
-version    : 23.08.4
-release    : 61
+version    : 24.01.90
+release    : 62
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kaccounts-integration-23.08.4.tar.xz : 7bec166405cca850921e12ae86a32e1c6c35411c3baeb5d7edc7c3350d71c952
+    - https://cdn.download.kde.org/unstable/release-service/24.01.90/src/kaccounts-integration-24.01.90.tar.xz : 458ec171b6355fd02ebf050f50fa07f831fac73ff45451017f83215b42f68f59
 homepage   : https://kde.org/
 license    : GPL-2.0-or-later
 component  : programming.library
@@ -10,23 +10,23 @@ summary    : System to administer web accounts - shared library
 description: |
     Small system to administer web accounts for the sites and services across the KDE desktop, including: Google, Facebook, Owncloud, IMAP, Jabber and others
 builddeps  :
-    - pkgconfig(accounts-qt5)
+    - pkgconfig(accounts-qt6)
     - pkgconfig(signond)
-    - kcmutils-devel
-    - kdbusaddons-devel
-    - kdeclarative-devel
-    - kio-devel
-    - kwallet-devel
-    - qcoro-qt5-devel
+    - kf6-kcmutils-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kdeclarative-devel
+    - kf6-kio-devel
+    - kf6-kwallet-devel
+    - qcoro-qt6-devel
 rundeps    :
     - signon-kwallet-extension
     - signon-plugin-oauth2
     - devel :
         - signond-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
     %ninja_install
-    %qml_cache
+    %qml6_cache
