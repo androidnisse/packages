@@ -1,8 +1,8 @@
 name       : merkuro
-version    : 23.08.4
-release    : 2
+version    : 24.01.95
+release    : 3
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/merkuro-23.08.4.tar.xz : f2123c7a1bda410ab8c8168311bc7a6e72abc51ab2408bef7c4da991e35eaee5
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/merkuro-24.01.95.tar.xz : 72ca5d7064f1bc0ee0da6449f6403eb024cb7f58283f9398904e43fd25e4ddd3
 homepage   : https://apps.kde.org/merkuro.calendar/
 license    :
     - BSD-2-Clause
@@ -18,34 +18,38 @@ summary    : Merkuro Calendar is a calendar application that allows you to manag
 description: |
     Merkuro Calendar is a calendar application that allows you to manage your tasks and events. Kalendar supports both local calendars as well as a multitude of online calendars: Nextcloud, Google® Calendar, Outlook®, Caldav, and many more. Merkuro gives you many ways to interact with your events. The month view provides an overview of the entire month; the week view presents a detailed hour-by-hour overview of your week; and the schedule view lists all of your upcoming events so that you can easily and quickly plan ahead. A tasks view is also available, making it possible for you to manage your tasks and subtasks with Merkuro's powerful tree view and its customisable filtering capabilities.
 builddeps  :
-    - pkgconfig(Qt5Qml)
-    - pkgconfig(Qt5Location)
-    - pkgconfig(Qt5QuickControls2)
-    - pkgconfig(Qt5Svg)
-    - pkgconfig(Qt5WebEngineWidgets)
-    - akonadi-contacts-devel
+    - pkgconfig(Qt6Location)
+    - pkgconfig(Qt6Qml)
+    - pkgconfig(Qt6QuickControls2)
+    - pkgconfig(Qt6Svg)
+    - pkgconfig(Qt6WebEngineWidgets)
     - akonadi-calendar-devel
+    - akonadi-contacts-devel
     - calendarsupport-devel
     - eventviews-devel
     - gpgme-qt-devel
-    - kcontacts-devel
-    - kdbusaddons-devel
     - kdepim-runtime
+    - kf6-kcontacts-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kiconthemes-devel
+    - kf6-kio-devel
+    - kf6-kirigami-devel
+    - kf6-kxmlgui-devel
+    - kf6-qqc2-desktop-style-devel
     - kidentitymanagement-devel
-    - kmime-devel
-    - kiconthemes-devel
-    - kio-devel
     - kirigami-addons-devel
-    - kirigami2-devel
+    - kmailtransport-devel
+    - kmbox-devel
+    - kmime-devel
     - ktextaddons-devel
     - mailcommon-devel
+    - mimetreeparser-devel
     - pimcommon-devel
-    - qqc2-desktop-style-devel
 rundeps    :
     - kdepim-runtime
     - kirigami-addons
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
