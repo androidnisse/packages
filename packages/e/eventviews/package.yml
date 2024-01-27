@@ -1,8 +1,8 @@
 name       : eventviews
-version    : 23.08.4
-release    : 71
+version    : 24.01.95
+release    : 72
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/eventviews-23.08.4.tar.xz : 306d8bbe43326bb59b72ca9ef43abc836188ebb7ee6dfcc08479a5ffdd11857e
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/eventviews-24.01.95.tar.xz : e58c5fb069d5a5abb687e5856aa01732cc8d72f1e9024463fb5fe50cf3365534
 homepage   : https://kde.org/
 license    :
     - GPL-2.0-or-later
@@ -16,22 +16,22 @@ builddeps  :
     - akonadi-contacts-devel
     - calendarsupport-devel
     - kcalutils-devel
-    - kcompletion-devel
-    - kcontacts-devel
+    - kf6-kcompletion-devel
+    - kf6-kcontacts-devel
     - kdiagram-devel
-    - kguiaddons-devel
-    - kholidays-devel
-    - kiconthemes-devel
+    - kf6-kguiaddons-devel
+    - kf6-kholidays-devel
+    - kf6-kiconthemes-devel
     - kidentitymanagement-devel
     - kmime-devel
-    - kservice-devel
-    - kxmlgui-devel
+    - kf6-kservice-devel
+    - kf6-kxmlgui-devel
     - libkdepim-devel
 rundeps    :
     - devel :
         - kcalutils-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
