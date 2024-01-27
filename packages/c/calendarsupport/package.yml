@@ -1,8 +1,8 @@
 name       : calendarsupport
-version    : 23.08.4
-release    : 72
+version    : 24.01.95
+release    : 73
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/calendarsupport-23.08.4.tar.xz : 7c708298bb6648c70475e8622bcdff738a5eaba286afe3369f1ea4d9d94401e4
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/calendarsupport-24.01.95.tar.xz : 9475794ff5c994b4c1f282377789d5100105b5aeace874918affc922ffd8626f
 homepage   : https://kde.org/
 license    :
     - GPL-2.0-or-later
@@ -12,23 +12,25 @@ summary    : Calendar Support library provides helper utilities for calendaring 
 description: |
     Calendar Support library provides helper utilities for calendaring applications.
 builddeps  :
-    - pkgconfig(Qt5Quick)
+    - pkgconfig(Qt6Quick)
     - akonadi-calendar-devel
     - akonadi-contacts-devel
     - akonadi-mime-devel
     - akonadi-notes-devel
-    - kcalendarcore-devel
+    - kf6-kcalendarcore-devel
     - kcalutils-devel
-    - kcontacts-devel
-    - kguiaddons-devel
-    - kholidays-devel
+    - kf6-kcontacts-devel
+    - kf6-kguiaddons-devel
+    - kf6-kholidays-devel
     - kidentitymanagement-devel
-    - kio-devel
+    - kf6-kio-devel
+    - kf6-kxmlgui-devel
     - kpimtextedit-devel
+    - ktextaddons-devel
     - libkdepim-devel
     - pimcommon-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
