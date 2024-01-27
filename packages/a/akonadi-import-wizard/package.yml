@@ -1,8 +1,8 @@
 name       : akonadi-import-wizard
-version    : 23.08.4
-release    : 66
+version    : 24.01.95
+release    : 67
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/akonadi-import-wizard-23.08.4.tar.xz : e239536545f748a19eb9e12e1f295b337a4621e5ebf7c734d22bedc4a119f322
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/akonadi-import-wizard-24.01.95.tar.xz : be69598b20268ba49327c54d1b3a87b9ab73f20ac345a7ff7ace4be42e4bc5a4
 homepage   : https://kde.org/
 license    :
     - GFDL-1.2-or-later
@@ -12,22 +12,24 @@ summary    : Assistant to import PIM data from other applications into Akonadi
 description: |
     Assistant to import PIM data from other applications into Akonadi for use in KDE PIM applications.
 builddeps  :
-    - pkgconfig(Qt5WebEngine)
+    - pkgconfig(Qt6WebEngineCore)
     - akonadi-contacts-devel
-    - kcontacts-devel
-    - kcrash-devel
-    - kdbusaddons-devel
-    - kdoctools-devel
+    - kf6-kauth-devel
+    - kf6-kcontacts-devel
+    - kf6-kcrash-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kdoctools-devel
     - kidentitymanagement-devel
-    - kio-devel
+    - kf6-kio-devel
+    - kf6-kxmlgui-devel
     - kmailtransport-devel
     - ktextaddons-devel
     - mailcommon-devel
     - mailimporter-devel
     - pimcommon-devel
-    - qtkeychain-qt5-devel
+    - qtkeychain-qt6-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
