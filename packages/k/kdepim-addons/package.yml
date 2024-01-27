@@ -1,8 +1,8 @@
 name       : kdepim-addons
-version    : 23.08.4
-release    : 68
+version    : 24.01.95
+release    : 69
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kdepim-addons-23.08.4.tar.xz : 3bef596058a18f1c73456e730095a21ab4550e37bd2f4030e6cfd8fb4efaabe3
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kdepim-addons-24.01.95.tar.xz : f1cde197de1e28a6f13f4e65df170fc45ef1e2bdf960fa59f74fdbc6eb26d235
 homepage   : https://community.kde.org/PIM
 license    :
     - GPL-2.0-only
@@ -12,7 +12,7 @@ summary    : Addons for KDE PIM applications
 description: |
     Addons for KDE PIM applications including akregator, kaddressbook, kmail and korganizer.
 builddeps  :
-    - pkgconfig(Qt5WebEngine)
+    - pkgconfig(Qt6WebEngineCore)
     - pkgconfig(libmarkdown)
     - akonadi-calendar-devel
     - akonadi-contacts-devel
@@ -22,18 +22,18 @@ builddeps  :
     - eventviews-devel
     - incidenceeditor-devel
     - kaddressbook-devel
-    - kcontacts-devel
-    - kdbusaddons-devel
-    - kdeclarative-devel
-    - kguiaddons-devel
-    - kholidays-devel
-    - kiconthemes-devel
+    - kf6-kcontacts-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kdeclarative-devel
+    - kf6-kguiaddons-devel
+    - kf6-kholidays-devel
+    - kf6-kiconthemes-devel
     - kidentitymanagement-devel
     - kimap-devel
     - kitinerary-devel
     - kmailtransport-devel
     - kontactinterface-devel
-    - kparts-devel
+    - kf6-kparts-devel
     - kpkpass-devel
     - ktextaddons-devel
     - ktnef-devel
@@ -42,11 +42,11 @@ builddeps  :
     - mailcommon-devel
     - mailimporter-devel
     - pimcommon-devel
-    - prison-devel
+    - kf6-prison-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
     %ninja_install
-    %qml_cache
+    %qml6_cache
