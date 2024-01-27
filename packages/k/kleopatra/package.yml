@@ -1,8 +1,8 @@
 name       : kleopatra
-version    : 23.08.4
-release    : 67
+version    : 24.01.95
+release    : 68
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kleopatra-23.08.4.tar.xz : 558e773bc55e0c265d9427bd45f9c588965e9eead4a111f0127840e233669157
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kleopatra-24.01.95.tar.xz : bfa0c57975cd9e8ab7b0efb7e39efa18003957251ec387c87b9f7429707b150e
 homepage   : https://kde.org/applications/utilities/org.kde.kleopatra
 license    :
     - GFDL-1.2-or-later
@@ -14,21 +14,24 @@ description: |
 builddeps  :
     - pkgconfig(libassuan)
     - gpgme-qt-devel
-    - kcmutils-devel
-    - kcrash-devel
-    - kdbusaddons-devel
-    - kiconthemes-devel
-    - kio-devel
-    - kitemmodels-devel
-    - knotifications-devel
-    - ktextwidgets-devel
-    - kwindowsystem-devel
-    - kxmlgui-devel
+    - kf6-kcmutils-devel
+    - kf6-kcrash-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kiconthemes-devel
+    - kf6-kio-devel
+    - kf6-kitemmodels-devel
+    - kf6-knotifications-devel
+    - kf6-kstatusnotifieritem-devel
+    - kf6-ktextwidgets-devel
+    - kf6-kwindowsystem-devel
+    - kf6-kxmlgui-devel
+    - kmbox-devel
     - kmime-devel
     - libboost-devel
     - libkleo-devel
+    - mimetreeparser-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
