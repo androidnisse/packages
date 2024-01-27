@@ -1,8 +1,8 @@
 name       : mailimporter
-version    : 23.08.4
-release    : 67
+version    : 24.01.95
+release    : 68
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/mailimporter-23.08.4.tar.xz : 2dfa474c6c119cbd3b31dc6773eb5cab561d058a6468c831937f176773138893
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/mailimporter-24.01.95.tar.xz : 87fe9a7e0e4ca6074459be1dafed3c876ea848f15b722f2539f0e2721afcc8ea
 homepage   : https://kde.org/
 license    : GPL-2.0-or-later
 component  : desktop.library
@@ -12,18 +12,19 @@ description: |
 builddeps  :
     - akonadi-contacts-devel
     - akonadi-mime-devel
-    - karchive-devel
-    - kcontacts-devel
+    - kf6-karchive-devel
+    - kf6-kcontacts-devel
     - kimap-devel
-    - kio-devel
+    - kf6-kio-devel
+    - kf6-kxmlgui-devel
     - kpimtextedit-devel
     - ktextaddons-devel
     - pimcommon-devel
 rundeps    :
     - devel :
-        - karchive-devel
+        - kf6-karchive-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
