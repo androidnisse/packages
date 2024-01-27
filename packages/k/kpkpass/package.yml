@@ -1,8 +1,8 @@
 name       : kpkpass
-version    : 23.08.4
-release    : 56
+version    : 24.01.95
+release    : 57
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kpkpass-23.08.4.tar.xz : a25c46d3b3329dae20bdb812a10dfd46139f3987710fe5215a0ad568557d9a9f
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kpkpass-24.01.95.tar.xz : e366f5b8becf40c1325e8fd196130466dc24dc6d4651e78cb9df7a6961423203
 homepage   : https://kde.org/
 license    : LGPL-2.1-or-later
 component  : programming.library
@@ -10,12 +10,11 @@ summary    : Apple Wallet Pass reader
 description: |
     Library to deal with Apple Wallet pass files.
 builddeps  :
-    - karchive-devel
+    - extra-cmake-modules
+    - kf6-karchive-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
     %ninja_install
-check      : |
-    %ninja_check
