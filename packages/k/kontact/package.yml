@@ -1,8 +1,8 @@
 name       : kontact
-version    : 23.08.4
-release    : 70
+version    : 24.01.95
+release    : 71
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kontact-23.08.4.tar.xz : f747ebca89c1657f8110b89106a7c98633a16c81349041cd006b481a72367389
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kontact-24.01.95.tar.xz : 74aeb2a99c2daa0a25050dbe698fc965dbe0387b3b5ca69e224babb58fad6b37
 homepage   : https://kde.org/applications/office/org.kde.kontact
 license    :
     - GFDL-1.2-or-later
@@ -12,17 +12,17 @@ summary    : Container application to unify several major PIM applications withi
 description: |
     Kontact is the integrated solution to your personal information management (PIM) needs. It combines well-known KDE applications like KMail, KOrganizer and KAddressBook into a single interface to provide easy access to mail, scheduling, address book and other PIM functionality.
 builddeps  :
-    - pkgconfig(Qt5WebEngine)
-    - kcmutils-devel
-    - kcrash-devel
-    - kdbusaddons-devel
-    - kcontacts-devel
-    - kdoctools-devel
-    - kguiaddons-devel
-    - kiconthemes-devel
+    - pkgconfig(Qt6WebEngineCore)
+    - kf6-kcmutils-devel
+    - kf6-kcrash-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kcontacts-devel
+    - kf6-kdoctools-devel
+    - kf6-kguiaddons-devel
+    - kf6-kiconthemes-devel
     - kmime-devel
     - kontactinterface-devel
-    - kparts-devel
+    - kf6-kparts-devel
     - kpimtextedit-devel
     - ktextaddons-devel
     - libkdepim-devel
@@ -34,7 +34,7 @@ rundeps    :
     - knotes
     - korganizer
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
