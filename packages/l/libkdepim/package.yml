@@ -1,8 +1,8 @@
 name       : libkdepim
-version    : 23.08.4
-release    : 72
+version    : 24.01.95
+release    : 73
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/libkdepim-23.08.4.tar.xz : ff68425958e85bf0e028658be0e054f27d26b1f2a3ddf6b84258d3e18b0eea65
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/libkdepim-24.01.95.tar.xz : e73257f673a9d4aabc50996c5dab2156a42795edcb1be44e488636f8f9238719
 homepage   : https://kde.org/
 license    : GPL-2.0-or-later
 component  : desktop.library
@@ -10,13 +10,13 @@ summary    : Libraries for KDE PIM applications
 description: |
     Libraries for KDE PIM applications.
 builddeps  :
-    - kcompletion-devel
-    - kconfigwidgets-devel
-    - ki18n-devel
+    - kf6-kcompletion-devel
+    - kf6-kconfigwidgets-devel
+    - kf6-ki18n-devel
     - kitemviews-devel
     - kjobwidgets-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
