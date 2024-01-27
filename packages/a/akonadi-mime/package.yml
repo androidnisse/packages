@@ -21,7 +21,7 @@ rundeps    :
         - akonadi-devel
         - kmime-devel
 setup      : |
-    %cmake_kf6 -DBUILD_TESTING=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
