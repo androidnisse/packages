@@ -1,8 +1,8 @@
 name       : kimap
-version    : 23.08.4
-release    : 68
+version    : 24.01.95
+release    : 69
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kimap-23.08.4.tar.xz : 5aa1050081154673adc547c2bc094285e758a25615ce45450af4fbf32f8fd40c
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kimap-24.01.95.tar.xz : eaa6cfa379aa38599c3ff503c324fbc7eec4425278dc9cd467eff2939b760b72
 homepage   : https://kde.org/
 license    : LGPL-2.1-or-later
 component  : desktop.library
@@ -12,9 +12,9 @@ description: |
 builddeps  :
     - pkgconfig(libsasl2)
     - kmime-devel
-    - kio-devel
+    - kf6-kio-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
