@@ -1,8 +1,8 @@
 name       : libkleo
-version    : 23.08.4
-release    : 69
+version    : 24.01.95
+release    : 70
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/libkleo-23.08.4.tar.xz : f1abf5b8a66ecbba7376507c07d61fea6fe222f57bc90274fb6d381ddabb5a07
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/libkleo-24.01.95.tar.xz : bfa4718350d5cbcb8c11e9e2cf33301746b58a49bdbbd0cbd4d1ef6ef9fd2043
 homepage   : https://kde.org/
 license    : GPL-2.0-or-later
 component  : desktop.library
@@ -11,20 +11,20 @@ description: |
     KDE PIM cryptographic library.
 builddeps  :
     - gpgme-qt-devel
-    - kcodecs-devel
-    - kcompletion-devel
-    - kconfig-devel
-    - kconfigwidgets-devel
-    - kcoreaddons-devel
-    - kitemmodels-devel
+    - kf6-kcodecs-devel
+    - kf6-kcompletion-devel
+    - kf6-kconfig-devel
+    - kf6-kconfigwidgets-devel
+    - kf6-kcoreaddons-devel
+    - kf6-kitemmodels-devel
     - kpimtextedit-devel
-    - kwidgetsaddons-devel
+    - kf6-kwidgetsaddons-devel
     - libboost-devel
 rundeps    :
     - devel :
         - gpgme-qt-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
