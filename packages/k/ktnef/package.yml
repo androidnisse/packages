@@ -1,8 +1,8 @@
 name       : ktnef
-version    : 23.08.4
-release    : 67
+version    : 24.01.95
+release    : 68
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/ktnef-23.08.4.tar.xz : e544aa959e48bb326bb83882a917f840c749c6123e276c61abd0525b1816cf39
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/ktnef-24.01.95.tar.xz : f4bfb537ae606eb88ac4b4137763218b102adbdeff0058ea33784e5060b2a4f7
 homepage   : https://kde.org/
 license    : LGPL-2.1-or-later
 component  : programming.library
@@ -10,11 +10,11 @@ summary    : API for handling TNEF data
 description: |
     API for handling TNEF data.
 builddeps  :
-    - kcalendarcore-devel
+    - kf6-kcalendarcore-devel
     - kcalutils-devel
-    - kcontacts-devel
+    - kf6-kcontacts-devel
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6 -DBUILD_TESTING=OFF
 build      : |
     %ninja_build
 install    : |
