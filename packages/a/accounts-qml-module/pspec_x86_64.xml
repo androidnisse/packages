@@ -3,8 +3,8 @@
         <Name>accounts-qml-module</Name>
         <Homepage>https://accounts-sso.gitlab.io/</Homepage>
         <Packager>
-            <Name>Muhammad Alfi Syahrin</Name>
-            <Email>ems1000.syahrin@gmail.com</Email>
+            <Name>Reilly Brogan</Name>
+            <Email>solus@reillybrogan.com</Email>
         </Packager>
         <License>LGPL-2.1-only</License>
         <PartOf>programming</PartOf>
@@ -20,19 +20,18 @@
 </Description>
         <PartOf>programming</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin/tst_plugin</Path>
-            <Path fileType="library">/usr/lib64/qt5/qml/Ubuntu/OnlineAccounts/libAccounts.so</Path>
-            <Path fileType="library">/usr/lib64/qt5/qml/Ubuntu/OnlineAccounts/plugin.qmltypes</Path>
-            <Path fileType="library">/usr/lib64/qt5/qml/Ubuntu/OnlineAccounts/qmldir</Path>
+            <Path fileType="library">/usr/lib64/qt6/qml/SSO/OnlineAccounts/libAccounts.so</Path>
+            <Path fileType="library">/usr/lib64/qt6/qml/SSO/OnlineAccounts/plugin.qmltypes</Path>
+            <Path fileType="library">/usr/lib64/qt6/qml/SSO/OnlineAccounts/qmldir</Path>
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2023-11-10</Date>
+        <Update release="4">
+            <Date>2024-02-15</Date>
             <Version>0.7</Version>
             <Comment>Packaging update</Comment>
-            <Name>Muhammad Alfi Syahrin</Name>
-            <Email>ems1000.syahrin@gmail.com</Email>
+            <Name>Reilly Brogan</Name>
+            <Email>solus@reillybrogan.com</Email>
         </Update>
     </History>
 </PISI>
