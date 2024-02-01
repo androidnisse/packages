@@ -1,6 +1,6 @@
 name       : kf6-purpose
 version    : 5.249.0
-release    : 2
+release    : 3
 source     :
     - https://download.kde.org/unstable/frameworks/5.249.0/purpose-5.249.0.tar.xz : 39cbc645724a4aa5e6b5a4ebe0a89a5c1e93c3f050449bdfe1a8ce946f044dcb
 homepage   : https://community.kde.org/Frameworks
@@ -14,23 +14,22 @@ description: |
     This framework offers the possibility to create integrate services and actions on any application without having to implement them specifically. Purpose will offer them mechanisms to list the different alternatives to execute given the requested action type and will facilitate components so that all the plugins can receive all the information they need.
 builddeps  :
     - pkgconfig(Qt6Quick)
-    #- pkgconfig(accounts-qt6)
-    # Disabled for now, will need to be re-added
+    - pkgconfig(accounts-qt6)
     - pkgconfig(signond)
-    #- kf6-kaccounts-integration-devel
-    # Disabled for now, will need to be re-added
+    - accounts-qml-module
     - kf6-kdeclarative-devel
     - kf6-kio-devel
     - kf6-kirigami-devel
     - kf6-knotifications-devel
     - kf6-prison-devel
-    # TODO add remaining deps
+    # TODO figure out kaccounts-integration
 rundeps    :
+    - accounts-qml-module
     - devel :
         - kf6-kcoreaddons-devel
     - kf6-prison
 clang      : yes
-optimize   : lto
+optimize   : thin-lto
 setup      : |
     %cmake_kf6
 build      : |
