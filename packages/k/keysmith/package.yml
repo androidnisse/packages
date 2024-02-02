@@ -1,8 +1,8 @@
 name       : keysmith
-version    : 23.08.4
-release    : 2
+version    : 24.01.95
+release    : 3
 source     :
-    - https://download.kde.org/stable/release-service/23.08.4/src/keysmith-23.08.4.tar.xz : 76100bf9a038d8bbfdcfe434c02c8362f654c70051b2c1e13055ff7b2031d585
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/keysmith-24.01.95.tar.xz : 3df40756e7b6e868558c5fc5c8084ec87eb602ae8cc1a7705640e0d010779e0c
 homepage   : https://apps.kde.org/keysmith
 license    : GPL-3.0-or-later
 component  : desktop.kde
@@ -10,17 +10,18 @@ summary    : OTP client for Plasma Mobile and Desktop
 description: |
     Keysmith is an application to generate two-factor authentication (2FA) tokens when logging in to your (online) accounts. Currently it supports both HOTP and TOTP tokens.
 builddeps  :
-    - pkgconfig(Qt5Core)
-    - pkgconfig(Qt5QuickControls2)
-    - pkgconfig(Qt5Svg)
+    - pkgconfig(Qt6Core)
+    - pkgconfig(Qt6Core5Compat)
+    - pkgconfig(Qt6QuickControls2)
+    - pkgconfig(Qt6Svg)
     - pkgconfig(libsodium)
     - extra-cmake-modules
-    - kdbusaddons-devel
-    - ki18n-devel
-    - kirigami2-devel
-    - kwindowsystem-devel
+    - kf6-kdbusaddons-devel
+    - kf6-ki18n-devel
+    - kf6-kirigami-devel
+    - kf6-kwindowsystem-devel
 setup      : |
-    %cmake_ninja
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
