@@ -1,0 +1,27 @@
+name       : python-eopkg
+version    : '4.0'
+release    : 1
+source     :
+    - git|https://github.com/getsolus/eopkg.git : 41d729b2eaf8ce6681f8fe2a82ce2d34a6d632f0
+homepage   : https://github.com/getsolus/eopkg
+license    : GPL-2.0-or-later
+component  : programming.python
+summary    : eopkg includes
+description: |
+    Python includes for eopkg package manager (no executables)
+builddeps  :
+    - python-build
+    - python-installer
+    - python-lxml
+    - python-packaging
+    - python-wheel
+rundeps    :
+    - python-lxml
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
+
+    # Remove executables. We use a nuitka compiled version of eopkg as the actual package manager
+    # to guard against python3 bootstrap issues.
+    rm -fr $installdir/usr/bin/
