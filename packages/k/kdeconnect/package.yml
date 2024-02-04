@@ -1,8 +1,8 @@
 name       : kdeconnect
-version    : 23.08.4
-release    : 66
+version    : 24.01.95
+release    : 67
 source     :
-    - https://cdn.download.kde.org/stable/release-service/23.08.4/src/kdeconnect-kde-23.08.4.tar.xz : 0bd5a45a31da21d0e5939930059fad23b608efa727db6ff020166912db78f871
+    - https://cdn.download.kde.org/unstable/release-service/24.01.95/src/kdeconnect-kde-24.01.95.tar.xz : 1143e6bbb7ae8db35a5d7a62e3b98ce99dbd184124259e2813e42986da42c586
 homepage   : https://kdeconnect.kde.org/
 license    : GPL-2.0-or-later
 component  : desktop.kde
@@ -12,43 +12,47 @@ description: |
 builddeps  :
     - pkgconfig(KF5WaylandClient)
     - pkgconfig(ModemManager)
-    - pkgconfig(Qt5Multimedia)
-    - pkgconfig(Qt5QuickControls2)
-    - pkgconfig(Qt5WaylandClient)
-    - pkgconfig(Qt5X11Extras)
+    - pkgconfig(Qt6Bluetooth)
+    - pkgconfig(Qt6Core5Compat)
+    - pkgconfig(Qt6Multimedia)
+    - pkgconfig(Qt6QuickControls2)
+    - pkgconfig(Qt6WaylandClient)
     - pkgconfig(fuse)
-    - pkgconfig(qca2-qt5)
     - pkgconfig(wayland-protocols)
     - pkgconfig(xkbcommon)
     - pkgconfig(xtst)
     - extra-cmake-modules
-    - kcmutils-devel
-    - kdbusaddons-devel
-    - kdoctools-devel
-    - kguiaddons-devel
-    - kiconthemes-devel
-    - kio-devel
-    - kirigami2-devel
-    - knotifications-devel
-    - kpackage-devel
+    - kf6-kcmutils-devel
+    - kf6-kdbusaddons-devel
+    - kf6-kdoctools-devel
+    - kf6-kguiaddons-devel
+    - kf6-kiconthemes-devel
+    - kf6-kio-devel
+    - kf6-kirigami-devel
+    - kf6-knotifications-devel
+    - kf6-kpackage-devel
+    - kf6-kpeople-devel
+    - kf6-kstatusnotifieritem-devel
+    - kf6-modemmanager-qt-devel
+    - kf6-qqc2-desktop-style-devel
+    - kirigami-addons-devel
     - kpeople-devel
     - kpeoplevcard-devel
     - libfakekey-devel
-    - modemmanager-qt-devel
     - plasma-wayland-protocols-devel
     - pulseaudio-qt-devel
-    - qqc2-desktop-style-devel
+    - qca-qt6-devel
 rundeps    :
-    - kirigami2
+    - kf6-kirigami
     - kpeoplevcard
     - sshfs-fuse
 setup      : |
-    %cmake_ninja -DBUILD_TESTING=OFF
+    %cmake_kf6
 build      : |
     %ninja_build
 install    : |
     %ninja_install
-    %qml_cache
+    %qml6_cache
 
     # remove doc
     rm -rf $installdir/usr/share/doc
