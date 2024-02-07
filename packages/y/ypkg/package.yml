@@ -1,8 +1,8 @@
 name       : ypkg
 version    : '31'
-release    : 174
+release    : 175
 source     :
-    - git|https://github.com/getsolus/ypkg.git : e676667ad54dd1aa21fad804225c9a791fd77813
+    - git|https://github.com/getsolus/ypkg.git : a33039418efdabffb4e5f6883f6615a2b7fe30db
 homepage   : https://github.com/getsolus/ypkg
 license    : GPL-3.0-or-later
 component  : system.devel
@@ -10,18 +10,15 @@ summary    : Modern, declarative, structured build format
 description: |
     ypkg is the build tool of choice for Solus. Simply put, it is a tool to convert a build process into a packaging operation.
 mancompress: yes
-builddeps  :
-    - python-setuptools
 rundeps    :
     - fakeroot
     - pyyaml
+    - python-eopkg
     - ruamel_yaml
-setup      : |
-    %patch -p1 -i $pkgfiles/0001-Call-out-to-sha256sum-instead-of-using-hashlib-which.patch
 build      : |
-    %python_setup
+    %python3_setup
 install    : |
-    %python_install
+    %python3_install
     # These are going to be replaced by ypkg-tools
     install -Ddm00755 $installdir/usr/share/ypkg
     ln -sv ../../bin/yupdate $installdir/usr/share/ypkg/yupdate.py
