@@ -1,0 +1,24 @@
+name       : neohtop
+version    : 1.1.2
+release    : 1
+source     :
+    - https://github.com/Abdenasser/neohtop/archive/refs/tags/v1.1.2.tar.gz : 6415efdaadc88b3b0c02cd7c3c18a39abd91f01475be72f44ddd5effd112e905
+homepage   : https://abdenasser.github.io/neohtop/
+license    : MIT
+component  : system.utils
+summary    : Blazing-fast system monitoring for your desktop.
+network    : yes
+description: |
+    A modern, cross-platform system monitor built on top of Svelte, Rust, and Tauri.
+builddeps  :
+    - pkgconfig(gdk-3.0)
+    - pkgconfig(webkit2gtk-4.1)
+    - rust
+    - nodejs
+build      : |
+    npm ci
+    npm run tauri build
+install    : |
+    install -Dm00755 src-tauri/target/release/NeoHtop $installdir/usr/bin/neohtop
+    install -Dm00644 $pkgfiles/neohtop.desktop $installdir/usr/share/applications/neohtop.desktop
+    install -Dm00644 src-tauri/icons/icon.png $installdir/usr/share/icons/neohtop.png
