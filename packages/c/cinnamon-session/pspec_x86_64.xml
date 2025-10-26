@@ -1,0 +1,52 @@
+<PISI>
+    <Source>
+        <Name>cinnamon-session</Name>
+        <Homepage>https://github.com/linuxmint/cinnamon-session</Homepage>
+        <Packager>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Packager>
+        <License>GPL-2.0-or-later</License>
+        <PartOf>desktop.library</PartOf>
+        <Summary xml:lang="en">The Cinnamon session manager.</Summary>
+        <Description xml:lang="en">The Cinnamon session manager.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>cinnamon-session</Name>
+        <Summary xml:lang="en">The Cinnamon session manager.</Summary>
+        <Description xml:lang="en">The Cinnamon session manager.
+</Description>
+        <PartOf>desktop.library</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/cinnamon-session</Path>
+            <Path fileType="executable">/usr/bin/cinnamon-session-quit</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-session/cinnamon-session-binary</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-session/cinnamon-session-check-accelerated</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-session/cinnamon-session-check-accelerated-helper</Path>
+            <Path fileType="data">/usr/share/cinnamon-session/cinnamon-session-quit.glade</Path>
+            <Path fileType="data">/usr/share/cinnamon-session/cinnamon-session-quit.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-session/config.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-session/hardware-compatibility</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.SessionManager.gschema.xml</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/cinnamon-session-properties.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/cinnamon-session-properties.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/cinnamon-session-properties.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/cinnamon-session-properties.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/cinnamon-session-properties.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/cinnamon-session-properties.svg</Path>
+            <Path fileType="man">/usr/share/man/man1/cinnamon-session-quit.1.zst</Path>
+            <Path fileType="man">/usr/share/man/man1/cinnamon-session.1.zst</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2025-10-26</Date>
+            <Version>6.4.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Update>
+    </History>
+</PISI>
