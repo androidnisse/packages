@@ -1,0 +1,23 @@
+name       : cinnamon-session
+version    : 6.6.3
+release    : 1
+source     :
+    - https://github.com/linuxmint/cinnamon-session/archive/refs/tags/6.6.3.tar.gz : ac7426dc383bbec3bd1576cb569d0837d95a87ec166a897263e0941be95feed6
+homepage   : https://github.com/linuxmint/cinnamon-session
+license    : GPL-2.0-or-later
+component  : desktop.library
+summary    : The Cinnamon session manager.
+description: |
+    The Cinnamon session manager.
+builddeps  :
+    - pkgconfig(cinnamon-desktop)
+    - pkgconfig(libcanberra)
+    - pkgconfig(sm)
+    - pkgconfig(xapp)
+    - pkgconfig(xtrans)
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
