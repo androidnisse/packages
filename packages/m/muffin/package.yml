@@ -1,0 +1,35 @@
+name       : muffin
+version    : 6.4.1
+release    : 1
+source     :
+    - https://github.com/linuxmint/muffin/archive/refs/tags/6.4.1.tar.gz : 3c4ef0139d9bbaf7ac17f39dd06b6397c175614a2eb6c55d463024a457293808
+homepage   : https://github.com/linuxmint/muffin
+license    : GPL-2.0-or-later
+component  : desktop.library
+summary    : The window management library for the Cinnamon desktop (libmuffin) and its sample WM binary (muffin).
+description: |
+    The window management library for the Cinnamon desktop (libmuffin) and its sample WM binary (muffin).
+builddeps  :
+    - pkgconfig(cinnamon-desktop)
+    - pkgconfig(gbm)
+    - pkgconfig(graphene-gobject-1.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(ice)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(libcanberra)
+    - pkgconfig(libdrm)
+    - pkgconfig(libinput)
+    - pkgconfig(libpipewire-0.3)
+    - pkgconfig(libstartup-notification-1.0)
+    - pkgconfig(libwacom)
+    - pkgconfig(sm)
+    - pkgconfig(wayland-protocols)
+    - pkgconfig(x11)
+    - pkgconfig(xkeyboard-config)
+    - pkgconfig(xwayland)
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
