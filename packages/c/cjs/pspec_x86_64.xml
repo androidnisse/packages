@@ -1,0 +1,72 @@
+<PISI>
+    <Source>
+        <Name>cjs</Name>
+        <Homepage>https://github.com/linuxmint/cjs</Homepage>
+        <Packager>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Packager>
+        <License>LGPL-2.0-or-later</License>
+        <License>MIT</License>
+        <PartOf>dekstop.library</PartOf>
+        <Summary xml:lang="en">The Cinnamon Javascript interpreter</Summary>
+        <Description xml:lang="en">The Cinnamon Javascript interpreter
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>cjs</Name>
+        <Summary xml:lang="en">The Cinnamon Javascript interpreter</Summary>
+        <Description xml:lang="en">The Cinnamon Javascript interpreter
+</Description>
+        <PartOf>dekstop.library</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/cjs</Path>
+            <Path fileType="executable">/usr/bin/cjs-console</Path>
+            <Path fileType="library">/usr/lib64/cjs/girepository-1.0/CjsPrivate-1.0.typelib</Path>
+            <Path fileType="library">/usr/lib64/cjs/installed-tests/cjs/GIMarshallingTests-1.0.typelib</Path>
+            <Path fileType="library">/usr/lib64/cjs/installed-tests/cjs/Regress-1.0.typelib</Path>
+            <Path fileType="library">/usr/lib64/cjs/installed-tests/cjs/RegressUnix-1.0.typelib</Path>
+            <Path fileType="library">/usr/lib64/cjs/installed-tests/cjs/Utility-1.0.typelib</Path>
+            <Path fileType="library">/usr/lib64/cjs/installed-tests/cjs/WarnLib-1.0.typelib</Path>
+            <Path fileType="library">/usr/lib64/cjs/installed-tests/cjs/libgimarshallingtests.so</Path>
+            <Path fileType="library">/usr/lib64/cjs/installed-tests/cjs/libregress.so</Path>
+            <Path fileType="library">/usr/lib64/cjs/installed-tests/cjs/libutility.so</Path>
+            <Path fileType="library">/usr/lib64/cjs/installed-tests/cjs/libwarnlib.so</Path>
+            <Path fileType="library">/usr/lib64/libcjs.so.0</Path>
+            <Path fileType="library">/usr/lib64/libcjs.so.0.0.0</Path>
+            <Path fileType="data">/usr/share/cjs-1.0/lsan/lsan.supp</Path>
+            <Path fileType="data">/usr/share/cjs-1.0/valgrind/gjs.supp</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>cjs-devel</Name>
+        <Summary xml:lang="en">Development files for cjs</Summary>
+        <Description xml:lang="en">The Cinnamon Javascript interpreter
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">cjs</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/cjs-1.0/cjs/context.h</Path>
+            <Path fileType="header">/usr/include/cjs-1.0/cjs/coverage.h</Path>
+            <Path fileType="header">/usr/include/cjs-1.0/cjs/error-types.h</Path>
+            <Path fileType="header">/usr/include/cjs-1.0/cjs/gjs.h</Path>
+            <Path fileType="header">/usr/include/cjs-1.0/cjs/macros.h</Path>
+            <Path fileType="header">/usr/include/cjs-1.0/cjs/mem.h</Path>
+            <Path fileType="header">/usr/include/cjs-1.0/cjs/profiler.h</Path>
+            <Path fileType="library">/usr/lib64/libcjs.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/cjs-1.0.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2025-10-27</Date>
+            <Version>128.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Update>
+    </History>
+</PISI>
