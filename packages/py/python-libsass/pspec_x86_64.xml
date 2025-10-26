@@ -1,0 +1,63 @@
+<PISI>
+    <Source>
+        <Name>python-libsass</Name>
+        <Homepage>https://sass.github.io/libsass-python/</Homepage>
+        <Packager>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>programming.python</PartOf>
+        <Summary xml:lang="en">Sass/SCSS for Python</Summary>
+        <Description xml:lang="en">Sass/SCSS for Python
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>python-libsass</Name>
+        <Summary xml:lang="en">Sass/SCSS for Python</Summary>
+        <Description xml:lang="en">Sass/SCSS for Python
+</Description>
+        <PartOf>programming.python</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/pysassc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/__pycache__/pysassc.cpython-312.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/__pycache__/pysassc.cpython-312.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/__pycache__/sass.cpython-312.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/__pycache__/sass.cpython-312.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/__pycache__/sasstests.cpython-312.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/__pycache__/sasstests.cpython-312.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/_sass.abi3.so</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/libsass-0.23.0.dist-info/METADATA</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/libsass-0.23.0.dist-info/RECORD</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/libsass-0.23.0.dist-info/WHEEL</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/libsass-0.23.0.dist-info/entry_points.txt</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/libsass-0.23.0.dist-info/licenses/LICENSE</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/libsass-0.23.0.dist-info/top_level.txt</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/pysassc.py</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sass.py</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sasstests.py</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sassutils/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sassutils/__pycache__/__init__.cpython-312.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sassutils/__pycache__/__init__.cpython-312.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sassutils/__pycache__/builder.cpython-312.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sassutils/__pycache__/builder.cpython-312.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sassutils/__pycache__/distutils.cpython-312.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sassutils/__pycache__/distutils.cpython-312.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sassutils/__pycache__/wsgi.cpython-312.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sassutils/__pycache__/wsgi.cpython-312.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sassutils/builder.py</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sassutils/distutils.py</Path>
+            <Path fileType="library">/usr/lib/python3.12/site-packages/sassutils/wsgi.py</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2025-10-25</Date>
+            <Version>0.23.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Update>
+    </History>
+</PISI>
