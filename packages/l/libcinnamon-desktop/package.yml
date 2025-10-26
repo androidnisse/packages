@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
 name       : libcinnamon-desktop
-version    : 6.6.0
-release    : 8
+version    : 6.6.2
+release    : 9
 source     :
-    - https://github.com/linuxmint/cinnamon-desktop/archive/refs/tags/6.6.0.tar.gz : d34bde974e3ade5106dfeb49233e3c5c7e30f84dbc4af49634feca3540990243
+    - https://github.com/linuxmint/cinnamon-desktop/archive/refs/tags/6.6.2.tar.gz : 4ed0d52a072551c6d536f1be68d4fcdb4166454fc9e48567ab2550282086b0f4
 homepage   : https://github.com/linuxmint/cinnamon-desktop
 license    : LGPL-2.0-or-later
 component  : desktop.library
@@ -12,10 +12,10 @@ description: |
     libcinnamon-desktop contains the libcinnamon-desktop library.
 builddeps  :
     - pkgconfig(gtk+-3.0)
+    - pkgconfig(libpulse)
     - pkgconfig(xkbfile)
     - pkgconfig(xkeyboard-config)
 setup      : |
-    %patch -p1 -i $pkgfiles/0001-Only-compile-the-desktop-library.patch
     %meson_configure
 build      : |
     %ninja_build
