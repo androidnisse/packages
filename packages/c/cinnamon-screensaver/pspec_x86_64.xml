@@ -1,0 +1,116 @@
+<PISI>
+    <Source>
+        <Name>cinnamon-screensaver</Name>
+        <Homepage>https://github.com/linuxmint/cinnamon-screensaver</Homepage>
+        <Packager>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Packager>
+        <License>GPL-2.0-or-later</License>
+        <PartOf>dekstop.library</PartOf>
+        <Summary xml:lang="en">The Cinnamon screen locker and screensaver program.</Summary>
+        <Description xml:lang="en">The Cinnamon screen locker and screensaver program.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>cinnamon-screensaver</Name>
+        <Summary xml:lang="en">The Cinnamon screen locker and screensaver program.</Summary>
+        <Description xml:lang="en">The Cinnamon screen locker and screensaver program.
+</Description>
+        <PartOf>dekstop.library</PartOf>
+        <Files>
+            <Path fileType="config">/etc/pam.d/cinnamon-screensaver</Path>
+            <Path fileType="executable">/usr/bin/cinnamon-screensaver</Path>
+            <Path fileType="executable">/usr/bin/cinnamon-screensaver-command</Path>
+            <Path fileType="executable">/usr/bin/cinnamon-unlock-desktop</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-screensaver/cinnamon-screensaver/cinnamon-screensaver-pam-helper</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-screensaver/cinnamon-screensaver/cs-backup-locker</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-screensaver/cinnamon-screensaver/girepository-1.0/CScreensaver-1.0.typelib</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-screensaver/cinnamon-screensaver/libcscreensaver.so</Path>
+            <Path fileType="data">/usr/share/applications/org.cinnamon.ScreenSaver.desktop</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/__init__.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/albumArt.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/audioPanel.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/baseWindow.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/cinnamon-screensaver-command.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/cinnamon-screensaver-main.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/cinnamon-screensaver.css</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/clock.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/config.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/constants.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/__init__.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/accountsServiceClient.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/baseClient.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/cinnamonClient.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/consoleKitClient.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/keybindingHandlerClient.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/loginInterface.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/logindClient.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/mediaPlayerWatcher.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/muffinClient.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/nameBlocker.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/sessionClient.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/dbusdepot/uPowerClient.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/floating.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/infoPanel.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/manager.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/monitorView.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/osk.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/pamhelper/authClient.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/passwordEntry.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/playerControl.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/service.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/singletons.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/stage.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/status.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/unlock.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/util/__init__.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/util/eventHandler.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/util/fader.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/util/focusNavigator.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/util/keybindings.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/util/settings.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/util/trackers.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/util/utils.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/volumeControl.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/widgets/__init__.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/widgets/framedImage.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/widgets/marqueeLabel.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/widgets/notificationWidget.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/widgets/powerWidget.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/widgets/transparentButton.py</Path>
+            <Path fileType="data">/usr/share/cinnamon-screensaver/widgets/volumeSlider.py</Path>
+            <Path fileType="data">/usr/share/dbus-1/services/org.cinnamon.ScreenSaver.service</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/screensaver-switch-users-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/screensaver-unlock-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/csr-backup-locker-icon.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/status/cinnamon-screensaver-view-conceal.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/status/cinnamon-screensaver-view-reveal.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/status/screensaver-blank.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/status/screensaver-notification-symbolic.svg</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>cinnamon-screensaver-devel</Name>
+        <Summary xml:lang="en">Development files for cinnamon-screensaver</Summary>
+        <Description xml:lang="en">The Cinnamon screen locker and screensaver program.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">cinnamon-screensaver</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="data">/usr/share/gir-1.0/CScreensaver-1.0.gir</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2025-11-01</Date>
+            <Version>6.4.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Update>
+    </History>
+</PISI>
