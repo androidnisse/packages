@@ -1,0 +1,24 @@
+name       : cjs
+version    : '140.1'
+release    : 1
+source     :
+    - https://github.com/linuxmint/cjs/archive/refs/tags/140.1.tar.gz : 1e223ce6229a7dc926b5ec3ee42040f6848e466ab51eb36c415c283b0b03098c
+homepage   : https://github.com/linuxmint/cjs
+license    :
+    - LGPL-2.0-or-later
+    - MIT
+component  : dekstop.library
+summary    : The Cinnamon Javascript interpreter
+description: |
+    The Cinnamon Javascript interpreter
+builddeps  :
+    - pkgconfig(cairo-svg)
+    - pkgconfig(mozjs-140)
+checkdeps  :
+    - pkgconfig(gdk-3.0)
+setup      : |
+    %meson_configure -Dinstalled_tests=false
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
