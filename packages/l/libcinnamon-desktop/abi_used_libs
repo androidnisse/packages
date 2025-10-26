@@ -8,5 +8,7 @@ libglib-2.0.so.0
 libgobject-2.0.so.0
 libgtk-3.so.0
 libm.so.6
+libpulse-mainloop-glib.so.0
+libpulse.so.0
 libsystemd.so.0
 libudev.so.1
