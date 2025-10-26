@@ -1,0 +1,20 @@
+name       : python-libsass
+version    : 0.23.0
+release    : 1
+source     :
+    - https://files.pythonhosted.org/packages/source/l/libsass/libsass-0.23.0.tar.gz : 6f209955ede26684e76912caf329f4ccb57e4a043fd77fe0e7348dd9574f1880
+homepage   : https://sass.github.io/libsass-python/
+license    : MIT
+component  : programming.python
+summary    : Sass/SCSS for Python
+description: |
+    Sass/SCSS for Python
+builddeps  :
+    - pkgconfig(python3)
+    - python-build
+    - python-installer
+    - python-setuptools
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
