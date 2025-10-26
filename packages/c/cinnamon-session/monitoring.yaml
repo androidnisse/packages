@@ -1,0 +1,6 @@
+releases:
+  id: 6386
+  rss: https://github.com/linuxmint/cinnamon-session/tags.atom
+ # No known CPE, checked 2025-10-26
+security:
+  cpe: ~
