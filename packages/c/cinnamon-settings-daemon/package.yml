@@ -1,0 +1,30 @@
+name       : cinnamon-settings-daemon
+version    : 6.6.4
+release    : 1
+source     :
+    - https://github.com/linuxmint/cinnamon-settings-daemon/archive/refs/tags/6.6.4.tar.gz : 215006afe3e59e4998fd3bb9f8ecf1b7c926a08b5398b42e482c5008483c970a
+homepage   : https://github.com/linuxmint/cinnamon-settings-daemon
+license    :
+    - GPL-2.0-or-later
+    - LGPL-2.0-or-later
+component  : dekstop.library
+summary    : The settings daemon for the Cinnamon desktop.
+description: |
+    The settings daemon for the Cinnamon desktop.
+builddeps  :
+    - pkgconfig(cinnamon-desktop)
+    - pkgconfig(colord)
+    - pkgconfig(cups)
+    - pkgconfig(cvc)
+    - pkgconfig(lcms2)
+    - pkgconfig(libcanberra-gtk3)
+    - pkgconfig(libgnomekbd)
+    - pkgconfig(libnotify)
+    - pkgconfig(nss)
+    - pkgconfig(upower-glib)
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
