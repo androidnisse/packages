@@ -1,0 +1,47 @@
+name       : cinnamon
+version    : 6.4.13
+release    : 1
+source     :
+    - https://github.com/linuxmint/cinnamon/archive/refs/tags/6.4.13.tar.gz : 32de89ebd195ea27d9a220715e70c65664058d3e89a380f83addc07c81692d2d
+homepage   : https://projects.linuxmint.com/cinnamon/
+license    : GPL-2.0-or-later
+component  : desktop
+summary    :  A Linux desktop featuring a traditional layout, built from modern technology and introducing brand new innovative features.
+description: |
+     A Linux desktop featuring a traditional layout, built from modern technology and introducing brand new innovative features.
+builddeps  :
+    - pkgconfig(cjs-1.0)
+    - pkgconfig(gbm)
+    - pkgconfig(gcr-base-3)
+    - pkgconfig(gstreamer-1.0)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libcinnamon-menu-3.0)
+    - pkgconfig(libnm)
+    - pkgconfig(libsecret-1)
+    - pkgconfig(muffin-clutter-x11-0)
+    - pkgconfig(xapp)
+    - python-libsass
+rundeps    :
+    - caribou
+    - cinnamon-control-center
+    - cinnamon-screensaver
+    - cinnamon-session
+    - cinnamon-settings-daemon
+    - cinnamon-translations
+    - gsound
+    - keybinder
+    - libcinnamon-desktop
+    - nemo
+    - python-pam
+    - python-pexpect
+    - python-pillow
+    - python-psutil
+    - python-setproctitle
+    - python-tinycss2
+    - python-xapp
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
