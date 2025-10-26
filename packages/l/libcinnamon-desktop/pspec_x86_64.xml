@@ -3,8 +3,8 @@
         <Name>libcinnamon-desktop</Name>
         <Homepage>https://github.com/linuxmint/cinnamon-desktop</Homepage>
         <Packager>
-            <Name>Evan Maddock</Name>
-            <Email>maddock.evan@vivaldi.net</Email>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
         </Packager>
         <License>LGPL-2.0-or-later</License>
         <PartOf>desktop.library</PartOf>
@@ -22,8 +22,11 @@
         <Files>
             <Path fileType="library">/usr/lib64/girepository-1.0/CDesktopEnums-3.0.typelib</Path>
             <Path fileType="library">/usr/lib64/girepository-1.0/CinnamonDesktop-3.0.typelib</Path>
+            <Path fileType="library">/usr/lib64/girepository-1.0/Cvc-1.0.typelib</Path>
             <Path fileType="library">/usr/lib64/libcinnamon-desktop.so.4</Path>
             <Path fileType="library">/usr/lib64/libcinnamon-desktop.so.4.0.0</Path>
+            <Path fileType="library">/usr/lib64/libcvc.so.0</Path>
+            <Path fileType="library">/usr/lib64/libcvc.so.0.0.0</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.desktop.a11y.applications.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.desktop.a11y.keyboard.gschema.xml</Path>
             <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.desktop.a11y.magnifier.gschema.xml</Path>
@@ -169,7 +172,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="7">libcinnamon-desktop</Dependency>
+            <Dependency release="8">libcinnamon-desktop</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/cinnamon-desktop/libcinnamon-desktop/cdesktop-enums.h</Path>
@@ -185,19 +188,32 @@
             <Path fileType="header">/usr/include/cinnamon-desktop/libcinnamon-desktop/gnome-systemd.h</Path>
             <Path fileType="header">/usr/include/cinnamon-desktop/libcinnamon-desktop/gnome-wall-clock.h</Path>
             <Path fileType="header">/usr/include/cinnamon-desktop/libcinnamon-desktop/gnome-xkb-info.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-desktop/libcvc/gvc-channel-map.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-desktop/libcvc/gvc-mixer-card.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-desktop/libcvc/gvc-mixer-control.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-desktop/libcvc/gvc-mixer-event-role.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-desktop/libcvc/gvc-mixer-sink-input.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-desktop/libcvc/gvc-mixer-sink.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-desktop/libcvc/gvc-mixer-source-output.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-desktop/libcvc/gvc-mixer-source.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-desktop/libcvc/gvc-mixer-stream.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-desktop/libcvc/gvc-mixer-ui-device.h</Path>
             <Path fileType="library">/usr/lib64/libcinnamon-desktop.so</Path>
+            <Path fileType="library">/usr/lib64/libcvc.so</Path>
             <Path fileType="data">/usr/lib64/pkgconfig/cinnamon-desktop.pc</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/cvc.pc</Path>
             <Path fileType="data">/usr/share/gir-1.0/CDesktopEnums-3.0.gir</Path>
             <Path fileType="data">/usr/share/gir-1.0/CinnamonDesktop-3.0.gir</Path>
+            <Path fileType="data">/usr/share/gir-1.0/Cvc-1.0.gir</Path>
         </Files>
     </Package>
     <History>
-        <Update release="7">
-            <Date>2024-12-31</Date>
+        <Update release="8">
+            <Date>2025-10-25</Date>
             <Version>6.4.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Evan Maddock</Name>
-            <Email>maddock.evan@vivaldi.net</Email>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
         </Update>
     </History>
 </PISI>
