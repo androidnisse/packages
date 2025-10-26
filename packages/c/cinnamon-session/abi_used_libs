@@ -1,0 +1,15 @@
+libGL.so.1
+libICE.so.6
+libSM.so.6
+libX11.so.6
+libXau.so.6
+libXcomposite.so.1
+libc.so.6
+libcanberra.so.0
+libcinnamon-desktop.so.4
+libgdk-3.so.0
+libgio-2.0.so.0
+libglib-2.0.so.0
+libgobject-2.0.so.0
+libgtk-3.so.0
+libsystemd.so.0
