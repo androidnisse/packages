@@ -1,0 +1,15 @@
+csd-automount:_IO_stdin_used
+csd-background:_IO_stdin_used
+csd-clipboard:_IO_stdin_used
+csd-color:_IO_stdin_used
+csd-color:_gnome_datetime_source_new
+csd-datetime-mechanism:_IO_stdin_used
+csd-housekeeping:_IO_stdin_used
+csd-input-helper:_IO_stdin_used
+csd-keyboard:_IO_stdin_used
+csd-media-keys:_IO_stdin_used
+csd-media-keys:main
+csd-power:_IO_stdin_used
+csd-print-notifications:_IO_stdin_used
+csd-printer:_IO_stdin_used
+csd-xsettings:_IO_stdin_used

@@ -15,6 +15,7 @@ static_libs:
     - basis-universal
     - bison
     - dmd
+    - cinnamon-settings-daemon
     - doomsday-engine
     - e2fsprogs
     - eternal-terminal
