@@ -1,0 +1,17 @@
+name       : cinnamon-menus
+version    : 6.8.0
+release    : 1
+source     :
+    - https://github.com/linuxmint/cinnamon-menus/archive/refs/tags/6.8.0.tar.gz : 555c24bebf284593bcf6d0c54df98ed1215c24bd4a08eecd11a07540f8b9450b
+homepage   : https://github.com/linuxmint/cinnamon-menus
+license    : GPL-2.0-or-later
+component  : desktop.library
+summary    : The cinnamon-menu library.
+description: |
+    The cinnamon-menu library.
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
