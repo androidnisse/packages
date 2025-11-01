@@ -1,0 +1,6 @@
+libcinnamon-control-center.so.1
+libcolor.so
+libdisplay.so
+libnetwork.so
+libregion.so
+libwacom-properties.so

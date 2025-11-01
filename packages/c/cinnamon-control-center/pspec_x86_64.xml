@@ -1,0 +1,89 @@
+<PISI>
+    <Source>
+        <Name>cinnamon-control-center</Name>
+        <Homepage>https://github.com/linuxmint/cinnamon-control-center</Homepage>
+        <Packager>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Packager>
+        <License>GPL-2.0-or-later</License>
+        <PartOf>desktop.library</PartOf>
+        <Summary xml:lang="en">A collection of configuration plugins used in cinnamon-settings.</Summary>
+        <Description xml:lang="en">A collection of configuration plugins used in cinnamon-settings.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>cinnamon-control-center</Name>
+        <Summary xml:lang="en">A collection of configuration plugins used in cinnamon-settings.</Summary>
+        <Description xml:lang="en">A collection of configuration plugins used in cinnamon-settings.
+</Description>
+        <PartOf>desktop.library</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/cinnamon-control-center</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-control-center-1/panels/libcolor.so</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-control-center-1/panels/libdisplay.so</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-control-center-1/panels/libnetwork.so</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-control-center-1/panels/libregion.so</Path>
+            <Path fileType="library">/usr/lib64/cinnamon-control-center-1/panels/libwacom-properties.so</Path>
+            <Path fileType="library">/usr/lib64/libcinnamon-control-center.so.1</Path>
+            <Path fileType="library">/usr/lib64/libcinnamon-control-center.so.1.0.0</Path>
+            <Path fileType="data">/usr/share/applications/cinnamon-color-panel.desktop</Path>
+            <Path fileType="data">/usr/share/applications/cinnamon-display-panel.desktop</Path>
+            <Path fileType="data">/usr/share/applications/cinnamon-network-panel.desktop</Path>
+            <Path fileType="data">/usr/share/applications/cinnamon-wacom-panel.desktop</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/panels/cinnamon-color-panel.desktop</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/panels/cinnamon-display-panel.desktop</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/panels/cinnamon-network-panel.desktop</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/panels/cinnamon-region-panel.desktop</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/panels/cinnamon-wacom-panel.desktop</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/cinnamon-region-panel-layout-chooser.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/cinnamon-region-panel-options-dialog.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/cinnamon-region-panel.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/color.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/language-chooser.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/network.ui</Path>
+            <Path fileType="data">/usr/share/cinnamon-control-center/ui/shell.ui</Path>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.cinnamon.control-center.display.gschema.xml</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/cinnamon-preferences-desktop-display.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/22x22/apps/cinnamon-preferences-desktop-display.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/24x24/apps/cinnamon-preferences-desktop-display.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/256x256/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/cinnamon-preferences-desktop-display.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/64x64/apps/cinnamon-preferences-color.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/cinnamon-preferences-color.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/apps/cinnamon-preferences-desktop-display.svg</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>cinnamon-control-center-devel</Name>
+        <Summary xml:lang="en">Development files for cinnamon-control-center</Summary>
+        <Description xml:lang="en">A collection of configuration plugins used in cinnamon-settings.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">cinnamon-control-center</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/cinnamon-control-center-1/libcinnamon-control-center/cc-editable-entry.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-control-center-1/libcinnamon-control-center/cc-panel.h</Path>
+            <Path fileType="header">/usr/include/cinnamon-control-center-1/libcinnamon-control-center/cc-shell.h</Path>
+            <Path fileType="library">/usr/lib64/libcinnamon-control-center.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/libcinnamon-control-center.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2025-10-26</Date>
+            <Version>6.4.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Update>
+    </History>
+</PISI>
