@@ -1,0 +1,29 @@
+name       : cinnamon-control-center
+version    : 6.6.0
+release    : 1
+source     :
+    - https://github.com/linuxmint/cinnamon-control-center/archive/refs/tags/6.6.0.tar.gz : 2de5fbc5a9fcc2e1dad9c595dfb1d9047ff885d391f45d6ffe8b6711bb4e24e4
+homepage   : https://github.com/linuxmint/cinnamon-control-center
+license    : GPL-2.0-or-later
+component  : desktop.library
+summary    : A collection of configuration plugins used in cinnamon-settings.
+description: |
+    A collection of configuration plugins used in cinnamon-settings.
+builddeps  :
+    - pkgconfig(cinnamon-desktop)
+    - pkgconfig(cinnamon-settings-daemon)
+    - pkgconfig(colord)
+    - pkgconfig(libcinnamon-menu-3.0)
+    - pkgconfig(libgnomekbd)
+    - pkgconfig(libnm)
+    - pkgconfig(libnma)
+    - pkgconfig(libnotify)
+    - pkgconfig(libwacom)
+    - pkgconfig(mm-glib)
+    - pkgconfig(upower-glib)
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
