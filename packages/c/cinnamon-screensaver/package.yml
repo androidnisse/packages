@@ -1,0 +1,24 @@
+name       : cinnamon-screensaver
+version    : 6.8.1
+release    : 1
+source     :
+    - https://github.com/linuxmint/cinnamon-screensaver/archive/refs/tags/6.8.1.tar.gz : 1ff4a02d7a87fed91950093f4fb49eb9bbc6328d1f3ce47b7372e5e25e88a86a
+homepage   : https://github.com/linuxmint/cinnamon-screensaver
+license    : GPL-2.0-or-later
+component  : dekstop.library
+summary    : The Cinnamon screen locker and screensaver program.
+description: |
+    The Cinnamon screen locker and screensaver program.
+builddeps  :
+    - pkgconfig(cinnamon-desktop)
+    - pkgconfig(libxdo)
+    - pkgconfig(xapp)
+    - python-xapp
+rundeps    :
+    - python-xapp
+setup      : |
+    %meson_configure
+build      : |
+    %ninja_build
+install    : |
+    %ninja_install
