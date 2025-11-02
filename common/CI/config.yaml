@@ -34,6 +34,7 @@ static_libs:
     - libiconv
     - libffcall
     - libnss
+    - libtimezonemap
     - libuv
     - llvm
     - llvm-15
