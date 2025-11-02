@@ -1,0 +1,15 @@
+releases:
+  id: ~
+  rss: ~
+security:
+  cpe:
+  - vendor: mozilla
+    product: firefox
+  - vendor: mozilla
+    product: firefox_focus
+  - vendor: mozilla
+    product: firefox_mobile
+  - vendor: cisco
+    product: webex_meeting_center_for_firefox_or_chrome
+  - vendor: ewen-lbh
+    product: firefox_css
