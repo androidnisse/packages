@@ -1,0 +1,6 @@
+releases:
+  id: 5725
+  rss: https://pypi.org/rss/project/python-pam/releases.xml
+ # No known CPE, checked 2025-11-02
+security:
+  cpe: ~
