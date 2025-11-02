@@ -1,0 +1,6 @@
+releases:
+  id: 6385
+  rss: https://github.com/linuxmint/cinnamon-screensaver/tags.atom
+ # No known CPE, checked 2025-10-26
+security:
+  cpe: ~
