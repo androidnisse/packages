@@ -1,0 +1,8 @@
+caribou-0.4.20-fix-python-exec.patch
+caribou-0.4.20-multilib.patch
+change_autostart_cinnamon.patch
+fix-style-css.patch
+Fix-compilation-error.patch
+Fix-subkey-popmenu-not-showing-after-being-dismissed.patch
+xadapter.vala-Remove-XkbKeyTypesMask-and-f.patch
+drop_gir_patch.patch
