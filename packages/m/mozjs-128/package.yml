@@ -1,0 +1,58 @@
+name       : mozjs
+version    : 128.14.0
+release    : 1
+source     :
+    - https://archive.mozilla.org/pub/firefox/releases/128.14.0esr/source/firefox-128.14.0esr.source.tar.xz : 93b9ef6229f41cb22ff109b95bbf61a78395a0fe4b870192eeca22947cb09a53
+homepage   : http://mozilla.org
+license    :
+    - GPL-2.0-or-later
+    - MPL-1.1
+component  : desktop.library
+summary    : JS is Mozilla's JavaScript engine written in C/C++
+description: |
+    JS is Mozilla's JavaScript engine written in C/C++
+strip      : no
+libsplit   : no
+networking : yes
+builddeps  :
+    - pkgconfig(icu-uc)
+    - autoconf213
+    - cbindgen
+    - llvm-clang
+    - rust
+environment: |
+    export AR=llvm-ar
+    export NM=llvm-nm
+    export RANLIB=llvm-ranlib
+setup      : |
+    %apply_patches
+    head -n -1 config/milestone.txt > config/milestone.txt
+    echo "${version}" >> config/milestone.txt
+
+    mkdir $workdir/building
+    cd $workdir/building
+
+    ../js/src/%configure \
+        --disable-debug \
+        --disable-debug-symbols \
+        --disable-jemalloc \
+        --disable-strip \
+        --disable-tests \
+        --enable-optimize \
+        --enable-posix-nspr-emulation \
+        --enable-readline \
+        --enable-release \
+        --enable-shared-js \
+        --enable-unaligned-private-values \
+        --with-system-zlib \
+        --with-system-icu
+build      : |
+    cd $workdir/building
+    %make
+install    : |
+    cd $workdir/building
+    %make_install
+    rm -r $installdir/%libdir%/*.ajs
+patterns   :
+    - devel :
+        - /usr/bin/js*-config
