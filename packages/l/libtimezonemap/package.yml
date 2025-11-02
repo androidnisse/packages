@@ -1,0 +1,23 @@
+name       : libtimezonemap
+version    : 0.4.5.4
+release    : 1
+source     :
+    - https://codeberg.org/dashea/timezonemap/archive/0.4.5.4.tar.gz : 7d4896b81f63a3f485a7115381098bd5068c7e36920087cd9adf7372e4328200
+homepage   : https://codeberg.org/dashea/timezonemap
+license    : GPL-3.0-or-later
+component  : desktop.library
+summary    : GTK+3 timezone map widget
+description: |
+    GTK+3 timezone map widget
+builddeps  :
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(librsvg-2.0)
+    - pkgconfig(libsoup-3.0)
+    - vala
+setup      : |
+    %reconfigure
+build      : |
+    %make
+install    : |
+    %make_install
