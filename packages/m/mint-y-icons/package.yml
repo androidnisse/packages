@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
+name       : mint-y-icons
+version    : 1.9.2
+release    : 2
+source     :
+    - https://github.com/linuxmint/mint-y-icons/archive/refs/tags/1.9.2.tar.gz : 555a00d3df20f060b0d2b9b718f48b593b123a7795ba94c13dcd10d41e5f917b
+homepage   : https://github.com/linuxmint/mint-y-icons
+license    : GPL-3.0-or-later
+component  : desktop.theme
+summary    : A flat, colorful, and modern theme based on Paper and Moka.
+description: |
+    A flat, colorful, and modern theme based on Paper and Moka.
+install    : |
+    install -dm00755 $installdir/usr/share/icons
+    cp -r usr/share/icons/* $installdir/usr/share/icons/
