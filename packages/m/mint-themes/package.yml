@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
+name       : mint-themes
+version    : 2.3.6
+release    : 1
+source     :
+    - https://github.com/linuxmint/mint-themes/archive/refs/tags/2.3.6.tar.gz : 7603beed7e2bfa60c81b19cbfdd2250071c0aa67795cd974cf3026c5758c47bd
+homepage   : https://github.com/linuxmint/mint-themes
+license    : GPL-3.0-or-later
+component  : desktop.gtk
+summary    : A collection of Mint themes.
+description: |
+    A collection of Mint themes.
+builddeps:
+    - python-libsass
+rundeps:
+    - font-ubuntu-ttf
+build      : |
+    %make
+install    : |
+    install -dm00755 $installdir/usr/share/themes
+    cp -r usr/share/themes/* $installdir/usr/share/themes/
