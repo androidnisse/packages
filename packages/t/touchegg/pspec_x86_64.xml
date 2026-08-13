@@ -1,0 +1,40 @@
+<PISI>
+    <Source>
+        <Name>touchegg</Name>
+        <Homepage>https://github.com/JoseExposito/touchegg</Homepage>
+        <Packager>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Packager>
+        <License>GPL-3.0-or-later</License>
+        <PartOf>desktop.library</PartOf>
+        <Summary xml:lang="en">Linux multi-touch gesture recognizer</Summary>
+        <Description xml:lang="en">Touch&#xe9;gg is an app that runs in the background and transform the gestures you make on your touchpad or touchscreen into visible actions in your desktop.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>touchegg</Name>
+        <Summary xml:lang="en">Linux multi-touch gesture recognizer</Summary>
+        <Description xml:lang="en">Touch&#xe9;gg is an app that runs in the background and transform the gestures you make on your touchpad or touchscreen into visible actions in your desktop.
+</Description>
+        <PartOf>desktop.library</PartOf>
+        <Files>
+            <Path fileType="config">/etc/xdg/autostart/touchegg.desktop</Path>
+            <Path fileType="executable">/usr/bin/touchegg</Path>
+            <Path fileType="library">/usr/lib/systemd/system/touchegg.service</Path>
+            <Path fileType="library">/usr/lib64/systemd/system-preset/20-touchegg.preset</Path>
+            <Path fileType="data">/usr/share/licenses/touchegg/COPYING</Path>
+            <Path fileType="data">/usr/share/touchegg/touchegg.conf</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-08-30</Date>
+            <Version>2.0.18</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Update>
+    </History>
+</PISI>
