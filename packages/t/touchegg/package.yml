@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
+name       : touchegg
+version    : 2.0.18
+release    : 1
+source     :
+    - https://github.com/JoseExposito/touchegg/archive/refs/tags/2.0.18.tar.gz : 7cf0b9239f414d9484495f2a57a28c1c99b3d7a7ae5767d10f0464809ae32e0b
+homepage   : https://github.com/JoseExposito/touchegg
+license    : GPL-3.0-or-later
+component  : desktop.library
+summary    : Linux multi-touch gesture recognizer
+description: |
+    Touchégg is an app that runs in the background and transform the gestures you make on your touchpad or touchscreen into visible actions in your desktop.
+builddeps  : 
+    - pkgconfig(cairo)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(libinput)
+    - pkgconfig(pugixml)
+    - pkgconfig(xrandr)
+    - pkgconfig(xtst)
+    - desktop-file-utils
+setup      : |
+    %cmake_ninja -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+build      : |
+    %ninja_build
+install    : |
+    %install_license COPYING
+    %ninja_install
+    install -Dm00644 -t ${installdir}/%libdir%/systemd/system-preset/ ${pkgfiles}/20-touchegg.preset
+    # Add OnlyShowIn to desktop file to autostart touchegg in Cinnamon only
+    desktop-file-edit --add-only-show-in='X-Cinnamon' ${installdir}/etc/xdg/autostart/touchegg.desktop
