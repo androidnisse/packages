@@ -1,0 +1,6 @@
+releases:
+  id: 241891
+  rss: https://github.com/JoseExposito/touchegg/tags.atom
+ # No known CPE, checked 2026-08-13
+security:
+  cpe: ~
