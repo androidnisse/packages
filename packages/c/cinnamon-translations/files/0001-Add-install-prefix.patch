@@ -1,7 +1,7 @@
 From 8bddb71cc29d6b29ce3d236c7f64ff4ebb35715c Mon Sep 17 00:00:00 2001
 From: Evan Maddock <maddock.evan@vivaldi.net>
 Date: Mon, 19 Dec 2022 16:33:41 -0500
-Subject: [PATCH] Add install prefix and only compile nemo translations
+Subject: [PATCH] Add install prefix and install all translations
 
 Signed-off-by: Evan Maddock <maddock.evan@vivaldi.net>
 ---
@@ -22,7 +22,7 @@ index aad8e780..2f5e4f90 100644
  	# WARNING: the second sed below will only works correctly with the languages that don't contain "-"
  	for dir in `ls po-export`; do \
 -		for file in `ls po-export/$$dir/*.po`; do \
-+		for file in `ls po-export/$$dir/nemo*.po`; do \
++		for file in `ls po-export/$$dir/*.po`; do \
  			lang=`echo $$file | sed 's/\.po$$//' | sed 's/.*\-//'`; \
 -			install -d usr/share/locale/$$lang/LC_MESSAGES/; \
 -			msgfmt -o usr/share/locale/$$lang/LC_MESSAGES/$$dir.mo $$file; \
@@ -31,6 +31,5 @@ index aad8e780..2f5e4f90 100644
  		done \
  	 done
  
--- 
+--
 2.39.0
-
