@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
 name       : nemo
-version    : 6.6.4
-release    : 18
+version    : 6.8.5
+release    : 19
 source     :
-    - https://github.com/linuxmint/nemo/archive/refs/tags/6.6.4.tar.gz : 258807feb2e7bac523707d6b3daf2d9439e7135123cbe795183d5aaa6fd691ed
+    - https://github.com/linuxmint/nemo/archive/refs/tags/6.8.5.tar.gz : 8ecbf936f933f5b99546193861a08a9ace6fea5e48bf71de2040cc6d31e9d328
 homepage   : https://github.com/linuxmint/nemo
 license    :
     - GPL-2.0-or-later
@@ -15,6 +15,8 @@ description: |
 builddeps  :
     - pkgconfig(cinnamon-desktop)
     - pkgconfig(exempi-2.0)
+    - pkgconfig(gstreamer-1.0)
+    - pkgconfig(gstreamer-pbutils-1.0)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(json-glib-1.0)
     - pkgconfig(libexif)
@@ -24,13 +26,14 @@ builddeps  :
     - pkgconfig(xapp)
 rundeps    :
     - cinnamon-translations
+    - gnome-disk-utility
     - gvfs-goa
     - xapp-symbolic-icons
 setup      : |
     %patch -p1 -i $pkgfiles/0001-Allow-changing-the-background-on-Budgie-Desktop.patch
 
     # Rename 'Files' app name to avoid having the same as nautilus
-    sed -i '/^\[Desktop Entry/,/^\[Desktop Action/ s/^Name\(.*\)=.*/Name\1=Nemo/' data/nemo.desktop.in
+    sed -i '/^\[Desktop Entry/,/^\[Desktop Action/ s/^Name\(.*\)=.*/Name\1=Nemo/' data/nemo.desktop
 
     %meson_configure -Dselinux=true
 build      : |

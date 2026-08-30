@@ -3,8 +3,8 @@
         <Name>nemo</Name>
         <Homepage>https://github.com/linuxmint/nemo</Homepage>
         <Packager>
-            <Name>Evan Maddock</Name>
-            <Email>maddock.evan@vivaldi.net</Email>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
         </Packager>
         <License>GPL-2.0-or-later</License>
         <License>LGPL-2.0-or-later</License>
@@ -70,6 +70,10 @@
             <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/nemo-horizontal-layout-wide-symbolic.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/nemo-location-symbolic-rtl.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/nemo-location-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/nemo-preview-hide-symbolic-rtl.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/nemo-preview-hide-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/nemo-preview-show-symbolic-rtl.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/nemo-preview-show-symbolic.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/nemo-recursive-search-symbolic-rtl.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/nemo-recursive-search-symbolic.svg</Path>
             <Path fileType="data">/usr/share/icons/hicolor/scalable/actions/nemo-sidebar-hide-symbolic-rtl.svg</Path>
@@ -142,7 +146,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="18">nemo</Dependency>
+            <Dependency release="19">nemo</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/nemo/libnemo-extension/nemo-column-provider.h</Path>
@@ -165,12 +169,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="18">
-            <Date>2026-03-31</Date>
-            <Version>6.6.4</Version>
+        <Update release="19">
+            <Date>2026-11-28</Date>
+            <Version>6.8.5</Version>
             <Comment>Packaging update</Comment>
-            <Name>Evan Maddock</Name>
-            <Email>maddock.evan@vivaldi.net</Email>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
         </Update>
     </History>
 </PISI>
