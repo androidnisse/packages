@@ -1,0 +1,8 @@
+releases:
+  id: 6265
+  rss: https://github.com/linuxmint/cinnamon/tags.atom
+# Verify successful cpe hits by visiting https://cve.circl.lu/search?vendor=$VENDOR&product=$PRODUCT
+security:
+  cpe:
+  - vendor: linuxmint
+    product: cinnamon
