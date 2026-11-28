@@ -1,0 +1,6 @@
+releases:
+  id: 47409
+  rss: https://pypi.org/rss/project/caldav/releases.xml
+ # No known CPE, checked 2026-11-28
+security:
+  cpe: ~

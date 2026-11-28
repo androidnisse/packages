@@ -1,0 +1,157 @@
+<PISI>
+    <Source>
+        <Name>python-caldav</Name>
+        <Homepage>https://pypi.org/project/caldav</Homepage>
+        <Packager>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <PartOf>programming.python</PartOf>
+        <Summary xml:lang="en">This project is a CalDAV (RFC4791) client library for Python.</Summary>
+        <Description xml:lang="en">This project is a CalDAV (RFC4791) client library for Python.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>python-caldav</Name>
+        <Summary xml:lang="en">This project is a CalDAV (RFC4791) client library for Python.</Summary>
+        <Description xml:lang="en">This project is a CalDAV (RFC4791) client library for Python.
+</Description>
+        <PartOf>programming.python</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav-3.7.0.dist-info/METADATA</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav-3.7.0.dist-info/RECORD</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav-3.7.0.dist-info/WHEEL</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav-3.7.0.dist-info/licenses/COPYING.APACHE</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav-3.7.0.dist-info/licenses/COPYING.GPL</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/__init__.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/__init__.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/_version.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/_version.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/aio.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/aio.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/async_davclient.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/async_davclient.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/base_client.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/base_client.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/calendarobjectresource.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/calendarobjectresource.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/collection.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/collection.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/compatibility_hints.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/compatibility_hints.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/config.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/config.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/datastate.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/datastate.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/davclient.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/davclient.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/davobject.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/davobject.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/discovery.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/discovery.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/requests.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/requests.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/response.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/response.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/search.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/__pycache__/search.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/_version.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/aio.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/async_davclient.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/base_client.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/calendarobjectresource.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/collection.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/compatibility_hints.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/config.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/datastate.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/davclient.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/davobject.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/discovery.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/__pycache__/__init__.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/__pycache__/__init__.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/__pycache__/base.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/__pycache__/base.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/__pycache__/cdav.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/__pycache__/cdav.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/__pycache__/dav.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/__pycache__/dav.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/__pycache__/ical.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/__pycache__/ical.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/base.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/cdav.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/dav.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/elements/ical.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/jmap/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/jmap/__pycache__/__init__.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/jmap/__pycache__/__init__.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/__init__.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/__init__.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/auth.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/auth.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/debug.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/debug.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/error.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/error.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/http_libraries.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/http_libraries.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/http_sync.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/http_sync.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/namespace.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/namespace.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/python_utilities.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/python_utilities.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/url.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/url.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/vcal.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/__pycache__/vcal.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/auth.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/debug.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/error.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/http_libraries.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/http_sync.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/namespace.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/python_utilities.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/url.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/lib/vcal.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/py.typed</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/requests.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/response.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/search.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/__init__.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/__init__.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/base.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/base.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/config_loader.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/config_loader.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/docker.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/docker.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/embedded.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/embedded.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/helpers.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/helpers.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/registry.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/__pycache__/registry.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/base.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/config_loader.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/docker.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/embedded.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/helpers.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/caldav/testing/registry.py</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-11-28</Date>
+            <Version>3.7.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Update>
+    </History>
+</PISI>

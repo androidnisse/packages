@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
+name       : python-caldav
+version    : 3.7.0
+release    : 1
+source     :
+    - https://files.pythonhosted.org/packages/0c/04/d083c70cbdf6a201fd4a9c6184b3470bda55f14b13979ade80a5909fa623/caldav-3.7.0.tar.gz : e121600e858e62c3631b9460167a099685f78f4ffda98b1a96e460c7b252fb45
+homepage   : https://pypi.org/project/caldav
+license    : Apache-2.0
+component  : programming.python
+summary    : This project is a CalDAV (RFC4791) client library for Python.
+description: |
+    This project is a CalDAV (RFC4791) client library for Python.
+builddeps  :
+    - python-build
+    - python-hatchling
+    - python-hatch-vcs
+    - python-installer
+    - python-setuptools
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
