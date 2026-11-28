@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
+name       : python-google-api-python-client
+version    : 2.202.0
+release    : 1
+source     :
+    - https://files.pythonhosted.org/packages/22/59/70df770dd367e268f0382fc98c6976d1e210e47351f263cced5b95989ee0/google_api_python_client-2.202.0.tar.gz : ae126c8e91f43c331e23dbd83bc4a8075699dd48089cebc7295f6ab2f5850fc5
+homepage   : https://github.com/googleapis/google-api-python-client/
+license    : Apache-2.0
+component  : programming.python
+summary    : The official Python client library for Google's discovery based APIs.
+description: |
+    The official Python client library for Google's discovery based APIs.
+builddeps  :
+    - python-build
+    - python-installer
+    - python-setuptools
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
