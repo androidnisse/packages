@@ -1,6 +1,8 @@
+openmsx:_ZNSt5ctypeIcE2idE
+openmsx:_ZNSt7__cxx117collateIcE2idE
+openmsx:_ZNSt7__cxx118numpunctIcE2idE
 openmsx:_ZSt4cerr
 openmsx:_ZSt4cout
-openmsx:_ZSt7nothrow
 openmsx:__GLEW_VERSION_2_1
 openmsx:__glewActiveTexture
 openmsx:__glewAttachShader
@@ -31,6 +33,7 @@ openmsx:__glewLinkProgram
 openmsx:__glewShaderSource
 openmsx:__glewUniform1f
 openmsx:__glewUniform1i
+openmsx:__glewUniform2f
 openmsx:__glewUniform3f
 openmsx:__glewUniform4f
 openmsx:__glewUniformMatrix3fv
@@ -43,3 +46,4 @@ openmsx:__libc_single_threaded
 openmsx:glewExperimental
 openmsx:main
 openmsx:stderr
+openmsx:stdout
