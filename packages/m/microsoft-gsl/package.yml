@@ -1,9 +1,9 @@
 # yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
 name       : microsoft-gsl
-version    : 4.0.0
-release    : 1
+version    : 5.0.1
+release    : 2
 source     :
-    - https://github.com/microsoft/GSL/archive/refs/tags/v4.0.0.tar.gz : f0e32cb10654fea91ad56bde89170d78cfbf4363ee0b01d8f097de2ba49f6ce9
+    - https://github.com/microsoft/GSL/archive/refs/tags/v5.0.1.tar.gz : 733a87a7eea56db075ee060735ba7616a27c1c55955f264d5473bf9e83294ad0
 homepage   : https://github.com/microsoft/GSL
 license    : MIT
 component  : programming.library
@@ -19,6 +19,7 @@ build      : |
     %ninja_build
 install    : |
     %ninja_install
+    %install_license LICENSE
 check      : |
     %ninja_check
 patterns   : /*
