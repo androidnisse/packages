@@ -1,0 +1,6 @@
+releases:
+  id: ~
+  rss: https://github.com/xapp-project/clockenstein/releases.atom
+ # No known CPE, checked 2026-11-28
+security:
+  cpe: ~

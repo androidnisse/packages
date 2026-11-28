@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
+name       : clockenstein
+version    : 2.0.5
+release    : 1
+source     :
+    - https://github.com/xapp-project/clockenstein/archive/refs/tags/2.0.5.tar.gz : ebb85709cf77699746b5bcd3a03409ac052c66b66039f48779fd533c4ff11242
+homepage   : https://xapp-project.org/clockenstein.html
+license    : GPL-3.0-or-later
+component  : office
+summary    : Clock and Calendar applications for Linux desktops.
+description: |
+    A focused desktop calendar for local events, Google Calendar and CalDAV. Open source, cross-desktop and made to feel at home on Linux.
+builddeps  :
+    - pkgconfig(gtk4)
+rundeps    :
+    - python-babel
+    - python-caldav
+    - python-google-api-core
+    - python-google-api-python-client
+    - python-google-auth
+    - python-google-auth-httplib2
+    - python-google-auth-oauthlib
+    - python-httplib2
+    - python-icalendar
+    - python-uritemplate
+setup      : |
+    %meson_configure
+build      : |
+    %meson_build
+install    : |
+    %meson_install
