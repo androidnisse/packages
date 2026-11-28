@@ -1,0 +1,6 @@
+releases:
+  id: ~ # Check https://release-monitoring.org/projects/search/
+  rss: https://pypi.org/rss/project/google_auth_httplib2/releases.xml
+ # No known CPE, checked 2026-11-28
+security:
+  cpe: ~

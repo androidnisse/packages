@@ -1,0 +1,42 @@
+<PISI>
+    <Source>
+        <Name>python-google-auth-httplib2</Name>
+        <Homepage>https://github.com/googleapis/google-cloud-python/tree/main/packages/google-auth-httplib2</Homepage>
+        <Packager>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <PartOf>programming.python</PartOf>
+        <Summary xml:lang="en">Google Authentication Library, httplib2 transport</Summary>
+        <Description xml:lang="en">Google Authentication Library: httplib2 transport
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>python-google-auth-httplib2</Name>
+        <Summary xml:lang="en">Google Authentication Library, httplib2 transport</Summary>
+        <Description xml:lang="en">Google Authentication Library: httplib2 transport
+</Description>
+        <PartOf>programming.python</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/__pycache__/google_auth_httplib2.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/__pycache__/google_auth_httplib2.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google_auth_httplib2-0.4.4.dist-info/METADATA</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google_auth_httplib2-0.4.4.dist-info/RECORD</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google_auth_httplib2-0.4.4.dist-info/WHEEL</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google_auth_httplib2-0.4.4.dist-info/licenses/LICENSE</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google_auth_httplib2-0.4.4.dist-info/top_level.txt</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google_auth_httplib2.py</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-11-28</Date>
+            <Version>0.4.4</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Update>
+    </History>
+</PISI>

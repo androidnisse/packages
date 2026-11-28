@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
+name       : python-google-auth-httplib2
+version    : 0.4.4
+release    : 1
+source     :
+    - https://files.pythonhosted.org/packages/bb/6d/a511ca64d5412850e351bdec6bb224e5090749bd85c186135e8fdb4fd85a/google_auth_httplib2-0.4.4.tar.gz : b931de392c20cfaa351cd789274922bd8cdc001e0e9e96de31b39d71347f8e16
+homepage   : https://github.com/googleapis/google-cloud-python/tree/main/packages/google-auth-httplib2
+license    : Apache-2.0
+component  : programming.python
+summary    : Google Authentication Library, httplib2 transport
+description: |
+    Google Authentication Library: httplib2 transport
+builddeps  :
+    - python-build
+    - python-installer
+    - python-setuptools
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
