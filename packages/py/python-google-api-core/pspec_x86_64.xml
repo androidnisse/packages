@@ -1,0 +1,253 @@
+<PISI>
+    <Source>
+        <Name>python-google-api-core</Name>
+        <Homepage>https://github.com/googleapis/google-cloud-python/tree/main/packages/google-api-core</Homepage>
+        <Packager>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Packager>
+        <License>Apache-2.0</License>
+        <PartOf>programming.python</PartOf>
+        <Summary xml:lang="en">Google API client core library</Summary>
+        <Description xml:lang="en">Google API client core library
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>python-google-api-core</Name>
+        <Summary xml:lang="en">Google API client core library</Summary>
+        <Description xml:lang="en">Google API client core library
+</Description>
+        <PartOf>programming.python</PartOf>
+        <Files>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/__init__.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/__init__.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/_feature_gating_helpers.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/_feature_gating_helpers.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/_observability.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/_observability.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/_python_package_support.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/_python_package_support.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/_python_version_support.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/_python_version_support.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/_rest_streaming_base.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/_rest_streaming_base.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/bidi.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/bidi.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/bidi_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/bidi_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/bidi_base.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/bidi_base.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/client_info.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/client_info.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/client_logging.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/client_logging.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/client_options.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/client_options.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/datetime_helpers.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/datetime_helpers.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/exceptions.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/exceptions.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/extended_operation.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/extended_operation.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/general_helpers.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/general_helpers.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/grpc_helpers.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/grpc_helpers.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/grpc_helpers_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/grpc_helpers_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/iam.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/iam.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/operation.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/operation.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/operation_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/operation_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/page_iterator.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/page_iterator.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/page_iterator_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/page_iterator_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/path_template.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/path_template.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/protobuf_helpers.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/protobuf_helpers.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/rest_helpers.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/rest_helpers.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/rest_streaming.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/rest_streaming.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/rest_streaming_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/rest_streaming_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/retry_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/retry_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/timeout.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/timeout.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/universe.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/universe.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/version.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/version.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/version_header.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/__pycache__/version_header.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/_feature_gating_helpers.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/_observability.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/_python_package_support.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/_python_version_support.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/_rest_streaming_base.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/bidi.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/bidi_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/bidi_base.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/client_info.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/client_logging.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/client_options.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/datetime_helpers.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/exceptions.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/extended_operation.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/__pycache__/__init__.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/__pycache__/__init__.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/__pycache__/_helpers.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/__pycache__/_helpers.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/__pycache__/async_future.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/__pycache__/async_future.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/__pycache__/base.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/__pycache__/base.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/__pycache__/polling.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/__pycache__/polling.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/_helpers.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/async_future.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/base.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/future/polling.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/__init__.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/__init__.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/client_info.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/client_info.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/config.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/config.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/config_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/config_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/method.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/method.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/method_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/method_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/requests.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/requests.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/routing_header.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/__pycache__/routing_header.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/client_info.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/config.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/config_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/method.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/method_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/requests.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/gapic_v1/routing_header.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/general_helpers.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/grpc_helpers.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/grpc_helpers_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/iam.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operation.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operation_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/__init__.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/__init__.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/abstract_operations_base_client.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/abstract_operations_base_client.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/abstract_operations_client.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/abstract_operations_client.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/operations_async_client.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/operations_async_client.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/operations_client.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/operations_client.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/operations_client_config.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/operations_client_config.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/operations_rest_client_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/operations_rest_client_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/pagers.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/pagers.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/pagers_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/pagers_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/pagers_base.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/__pycache__/pagers_base.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/abstract_operations_base_client.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/abstract_operations_client.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/operations_async_client.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/operations_client.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/operations_client_config.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/operations_rest_client_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/pagers.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/pagers_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/pagers_base.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/transports/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/transports/__pycache__/__init__.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/transports/__pycache__/__init__.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/transports/__pycache__/base.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/transports/__pycache__/base.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/transports/__pycache__/rest.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/transports/__pycache__/rest.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/transports/__pycache__/rest_asyncio.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/transports/__pycache__/rest_asyncio.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/transports/base.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/transports/rest.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/operations_v1/transports/rest_asyncio.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/page_iterator.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/page_iterator_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/path_template.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/protobuf_helpers.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/py.typed</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/rest_helpers.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/rest_streaming.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/rest_streaming_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/__pycache__/__init__.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/__pycache__/__init__.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/__pycache__/common.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/__pycache__/common.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/__pycache__/upload.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/__pycache__/upload.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/__pycache__/upload_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/__pycache__/upload_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/__pycache__/upload_state.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/__pycache__/upload_state.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/common.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/upload.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/upload_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/resumable_transfer/upload_state.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__init__.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__pycache__/__init__.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__pycache__/__init__.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__pycache__/retry_base.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__pycache__/retry_base.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__pycache__/retry_streaming.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__pycache__/retry_streaming.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__pycache__/retry_streaming_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__pycache__/retry_streaming_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__pycache__/retry_unary.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__pycache__/retry_unary.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__pycache__/retry_unary_async.cpython-314.opt-1.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/__pycache__/retry_unary_async.cpython-314.pyc</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/retry_base.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/retry_streaming.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/retry_streaming_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/retry_unary.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry/retry_unary_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/retry_async.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/timeout.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/universe.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/version.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google/api_core/version_header.py</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google_api_core-2.44.0.dist-info/METADATA</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google_api_core-2.44.0.dist-info/RECORD</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google_api_core-2.44.0.dist-info/WHEEL</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google_api_core-2.44.0.dist-info/licenses/LICENSE</Path>
+            <Path fileType="library">/usr/lib/python3.14/site-packages/google_api_core-2.44.0.dist-info/top_level.txt</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2026-11-28</Date>
+            <Version>2.44.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Jakob Gezelius</Name>
+            <Email>jakob@knugen.nu</Email>
+        </Update>
+    </History>
+</PISI>
