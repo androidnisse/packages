@@ -35,7 +35,6 @@ libc.so.6:stderr
 libc.so.6:strcmp
 libc.so.6:strdup
 libc.so.6:strlen
-libc.so.6:strtol
 libc.so.6:truncate
 libc.so.6:wmemcmp
 libc.so.6:wmemcpy
