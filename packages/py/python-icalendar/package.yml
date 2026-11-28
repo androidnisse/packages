@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
+name       : python-icalendar
+version    : 7.3.2
+release    : 1
+source     :
+    - https://files.pythonhosted.org/packages/9d/2d/db155eaa6ffe65b370b9899a69ac67cd439a33a9e9610327cef1ffaac86e/icalendar-7.3.2.tar.gz : 
+        f15380927aed4318860e001c03b543c48578c73aec46e2d384c5d0802082b808
+homepage   : https://icalendar.readthedocs.io/en/stable/
+license    : BSD-2-Clause
+component  : programming.python
+summary    : Internet Calendaring and Scheduling (iCalendar) for Python
+description: |
+    The icalendar package is an RFC 5545 compatible parser and generator of iCalendar files.
+builddeps  :
+    - python-build
+    - python-hatchling
+    - python-hatch-vcs
+    - python-installer
+    - python-setuptools
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
