@@ -32,6 +32,6 @@ libc.so.6
 libgcc_s.so.1
 libgpg-error.so.0
 libgpgmepp.so.7
-libkdsingleapplication-qt6.so.1.1
+libkdsingleapplication-qt6.so.1.2
 libqgpgmeqt6.so.15
 libstdc++.so.6

@@ -890,7 +890,6 @@ libQt6Core.so.6:_Z7qstrcmpPKcS0_
 libQt6Core.so.6:_Z8qmemrchrPKvim
 libQt6Core.so.6:_Z8qstricmpPKcS0_
 libQt6Core.so.6:_Z9qBadAllocv
-libQt6Core.so.6:_Z9qstrnicmpPKcS0_m
 libQt6Core.so.6:_ZN10QArrayData10deallocateEPS_xx
 libQt6Core.so.6:_ZN10QArrayData19reallocateUnalignedEPS_PvxxNS_16AllocationOptionE
 libQt6Core.so.6:_ZN10QArrayData8allocateEPPS_xxxNS_16AllocationOptionE
@@ -936,7 +935,6 @@ libQt6Core.so.6:_ZN11QFileDevice6resizeEx
 libQt6Core.so.6:_ZN11QFileDevice8readDataEPcx
 libQt6Core.so.6:_ZN11QFileDevice9writeDataEPKcx
 libQt6Core.so.6:_ZN11QMetaObject10ConnectionC1ERKS0_
-libQt6Core.so.6:_ZN11QMetaObject10ConnectionC1Ev
 libQt6Core.so.6:_ZN11QMetaObject10ConnectionD1Ev
 libQt6Core.so.6:_ZN11QMetaObject14normalizedTypeEPKc
 libQt6Core.so.6:_ZN11QMetaObject16invokeMethodImplEP7QObjectPKcN2Qt14ConnectionTypeExPKPKvPKS3_PKPKN9QtPrivate18QMetaTypeInterfaceE
@@ -1115,7 +1113,7 @@ libQt6Core.so.6:_ZN4QUrlC1Ev
 libQt6Core.so.6:_ZN4QUrlD1Ev
 libQt6Core.so.6:_ZN5QDate11currentDateEv
 libQt6Core.so.6:_ZN5QFile14setPermissionsE6QFlagsIN11QFileDevice10PermissionEE
-libQt6Core.so.6:_ZN5QFile4copyERK7QStringS2_
+libQt6Core.so.6:_ZN5QFile4copyERK7QStringS2_St8optionalI6QFlagsIN11QFileDevice10PermissionEEE
 libQt6Core.so.6:_ZN5QFile4openE6QFlagsIN13QIODeviceBase12OpenModeFlagEE
 libQt6Core.so.6:_ZN5QFile6existsERK7QString
 libQt6Core.so.6:_ZN5QFile6removeERK7QString
@@ -1151,6 +1149,7 @@ libQt6Core.so.6:_ZN7QLocaleD1Ev
 libQt6Core.so.6:_ZN7QObject10childEventEP11QChildEvent
 libQt6Core.so.6:_ZN7QObject10disconnectEPKS_PKcS1_S3_
 libQt6Core.so.6:_ZN7QObject10disconnectERKN11QMetaObject10ConnectionE
+libQt6Core.so.6:_ZN7QObject10disconnectERN11QMetaObject10ConnectionE
 libQt6Core.so.6:_ZN7QObject10timerEventEP11QTimerEvent
 libQt6Core.so.6:_ZN7QObject11connectImplEPKS_PPvS1_S3_PN9QtPrivate15QSlotObjectBaseEN2Qt14ConnectionTypeEPKiPK11QMetaObject
 libQt6Core.so.6:_ZN7QObject11customEventEP6QEvent
@@ -1275,6 +1274,8 @@ libQt6Core.so.6:_ZN8QProcessD2Ev
 libQt6Core.so.6:_ZN8QVariant13moveConstructE9QMetaTypePv
 libQt6Core.so.6:_ZN8QVariantC1E13QLatin1String
 libQt6Core.so.6:_ZN8QVariantC1E9QMetaTypePKv
+libQt6Core.so.6:_ZN8QVariantC1EO10QByteArray
+libQt6Core.so.6:_ZN8QVariantC1EO7QString
 libQt6Core.so.6:_ZN8QVariantC1ERK10QByteArray
 libQt6Core.so.6:_ZN8QVariantC1ERK4QUrl
 libQt6Core.so.6:_ZN8QVariantC1ERK7QString
@@ -1342,6 +1343,8 @@ libQt6Core.so.6:_ZN9QSaveFileD1Ev
 libQt6Core.so.6:_ZN9QSaveFileD2Ev
 libQt6Core.so.6:_ZN9QTimeZone3utcEv
 libQt6Core.so.6:_ZN9QTimeZoneD1Ev
+libQt6Core.so.6:_ZN9QtPrivate10findStringE11QStringViewx13QLatin1StringN2Qt15CaseSensitivityE
+libQt6Core.so.6:_ZN9QtPrivate10findStringE11QStringViewxS0_N2Qt15CaseSensitivityE
 libQt6Core.so.6:_ZN9QtPrivate10startsWithE14QByteArrayViewS0_
 libQt6Core.so.6:_ZN9QtPrivate11lastIndexOfE11QStringViewxDsN2Qt15CaseSensitivityE
 libQt6Core.so.6:_ZN9QtPrivate12argToQStringE14QAnyStringViewmPPKNS_7ArgBaseE
@@ -1517,8 +1520,6 @@ libQt6Core.so.6:_ZNK7QString18localeAwareCompareERKS_
 libQt6Core.so.6:_ZNK7QString5splitE5QChar6QFlagsIN2Qt18SplitBehaviorFlagsEENS2_15CaseSensitivityE
 libQt6Core.so.6:_ZNK7QString5splitERKS_6QFlagsIN2Qt18SplitBehaviorFlagsEENS3_15CaseSensitivityE
 libQt6Core.so.6:_ZNK7QString7compareERKS_N2Qt15CaseSensitivityE
-libQt6Core.so.6:_ZNK7QString7indexOfE13QLatin1StringxN2Qt15CaseSensitivityE
-libQt6Core.so.6:_ZNK7QString7indexOfERKS_xN2Qt15CaseSensitivityE
 libQt6Core.so.6:_ZNK7QString8arg_implE14QAnyStringViewi5QChar
 libQt6Core.so.6:_ZNK7QString8arg_implExii5QChar
 libQt6Core.so.6:_ZNK7QString8arg_implEyii5QChar
@@ -3105,13 +3106,13 @@ libgpgmepp.so.7:_ZNK5GpgME9Signature3keyEbb
 libgpgmepp.so.7:_ZNK5GpgME9Signature3keyEv
 libgpgmepp.so.7:_ZNK5GpgME9Signature6statusEv
 libgpgmepp.so.7:_ZNK5GpgME9Signature7summaryEv
-libkdsingleapplication-qt6.so.1.1:_ZN19KDSingleApplication11sendMessageERK10QByteArray
-libkdsingleapplication-qt6.so.1.1:_ZN19KDSingleApplication15messageReceivedERK10QByteArray
-libkdsingleapplication-qt6.so.1.1:_ZN19KDSingleApplication16staticMetaObjectE
-libkdsingleapplication-qt6.so.1.1:_ZN19KDSingleApplicationC1EP7QObject
-libkdsingleapplication-qt6.so.1.1:_ZN19KDSingleApplicationC1ERK7QStringP7QObject
-libkdsingleapplication-qt6.so.1.1:_ZN19KDSingleApplicationD1Ev
-libkdsingleapplication-qt6.so.1.1:_ZNK19KDSingleApplication17isPrimaryInstanceEv
+libkdsingleapplication-qt6.so.1.2:_ZN19KDSingleApplication11sendMessageERK10QByteArray
+libkdsingleapplication-qt6.so.1.2:_ZN19KDSingleApplication15messageReceivedERK10QByteArray
+libkdsingleapplication-qt6.so.1.2:_ZN19KDSingleApplication16staticMetaObjectE
+libkdsingleapplication-qt6.so.1.2:_ZN19KDSingleApplicationC1EP7QObject
+libkdsingleapplication-qt6.so.1.2:_ZN19KDSingleApplicationC1ERK7QStringP7QObject
+libkdsingleapplication-qt6.so.1.2:_ZN19KDSingleApplicationD1Ev
+libkdsingleapplication-qt6.so.1.2:_ZNK19KDSingleApplication17isPrimaryInstanceEv
 libqgpgmeqt6.so.15:_ZN6QGpgME10EncryptJob11setFileNameERK7QString
 libqgpgmeqt6.so.15:_ZN6QGpgME10EncryptJob12setInputFileERK7QString
 libqgpgmeqt6.so.15:_ZN6QGpgME10EncryptJob13setOutputFileERK7QString
