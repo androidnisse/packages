@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=/usr/share/ypkg/schema/schema.json
 name       : libre-graph-api
 version    : 1.0.4
-release    : 1
+release    : 2
 source     :
     - https://github.com/owncloud/libre-graph-api-cpp-qt-client/archive/refs/tags/v1.0.4.tar.gz : 5504024235b8474eb053dad0051d33f3fcfd9aabdbde96f506a77df181fcd84d
 license    : Apache-2.0
@@ -14,10 +14,13 @@ builddeps  :
     - pkgconfig(Qt6Core)
 setup      : |
     cd client
-    %cmake_ninja -DBUILD_SHARED_LIBS=ON
+    %cmake_ninja -DBUILD_SHARED_LIBS=ON \
+                 -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 build      : |
-    cd client
+    pushd client
     %ninja_build
 install    : |
-    cd client
+    pushd client
     %ninja_install
+    popd
+    %install_license LICENSE
